@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "Restricted to MACS majors with semester 5 standing",
+    "MACS 2450"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MACS-4560",
+  "courseName": "Special Topics"
+}

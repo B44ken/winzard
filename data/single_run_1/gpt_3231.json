@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "MATH-2780",
+    "MATH-2790",
+    "ELEC-3130"
+  ],
+  "labHours": 1.5,
+  "lectureHours": 3,
+  "courseCode": "ELEC-3240",
+  "courseName": "Control Systems I"
+}

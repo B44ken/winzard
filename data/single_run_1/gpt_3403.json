@@ -1,0 +1,12 @@
+{
+  "prerequisites": [
+    "MECH-3212",
+    "MECH-3233",
+    "MECH-3228",
+    "MECH-3217 or MECH-3220"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MECH-4218",
+  "courseName": "Thermofluid Systems Design"
+}

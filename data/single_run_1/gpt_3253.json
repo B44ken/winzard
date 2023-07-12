@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "All Electrical Engineering courses from 1st year",
+    "All Electrical Engineering courses from 2nd year",
+    "All Electrical Engineering courses from 3rd year"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "ELEC-4490",
+  "courseName": "Sensor and Vision Systems"
+}

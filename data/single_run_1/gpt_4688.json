@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "STAT-2920"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "STAT-2950",
+  "courseName": "Introduction to Statistics"
+}

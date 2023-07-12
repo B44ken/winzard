@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "BIOM-3500 or BIOM-3530",
+    "CHEM-2300",
+    "BIOC-2010"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "BIOM-4530",
+  "courseName": "Biology of Cell Transformation"
+}

@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "CIVL-3610",
+    "CIVL-3640"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "CIVL-4920",
+  "courseName": "Advanced Topics in Structural Design"
+}

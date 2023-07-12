@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ESCI-2701",
+    "ESCI-2711"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "ESCI-3701",
+  "courseName": "Spatial Modelling in GIS"
+}

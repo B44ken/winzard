@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "CHEM-2500"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "CHEM-2510",
+  "courseName": "Introductory Inorganic Chemistry II"
+}

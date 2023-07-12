@@ -1,0 +1,12 @@
+{
+  "prerequisites": [
+    "SOSC-2500",
+    "STAT-2920",
+    "STAT-2910",
+    "MSCI-2020"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ECON-2120",
+  "courseName": "Intermediate Statistical Methods"
+}

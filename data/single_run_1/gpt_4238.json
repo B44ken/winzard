@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "COMP-2120",
+    "COMP-2540"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-3340",
+  "courseName": "World Wide Web Information Systems Development"
+}

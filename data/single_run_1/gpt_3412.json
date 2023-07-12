@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MECH-2210",
+    "Semester 6 or higher standing"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "MECH-3215",
+  "courseName": "Mechanical Vibrations"
+}

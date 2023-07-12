@@ -1,0 +1,21 @@
+{
+  "prerequisites": [
+    "INCS-1200 or INCS-2200 or equivalent",
+    "INCS-1200 and INCS-2200 or permission of instructor"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "INCS-3200",
+  "courseName": "Theories of Language Acquisition"
+}
+
+{
+  "prerequisites": [
+    "INCS-1200 and INCS-2200",
+    "permission of instructor"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "INCS-3210",
+  "courseName": "Methodologies for Second Language Education"
+}

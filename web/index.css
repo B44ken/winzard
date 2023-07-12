@@ -1,0 +1,51 @@
+
+main {
+	font-family: Roboto, sans-serif;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.course-plan {
+	width: 100%;
+	max-width: 900px;
+	border: 2px solid black;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.semester {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.semester > div {
+	flex-grow: 1;
+	outline: 1px solid black;
+	width: 120px;
+	line-height: 100%;
+	height: 50px;
+}
+
+.class-name {
+	padding: 16px 0 0 4px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.class-buttons {
+	width: 20px;
+	float: right;
+	font-size: 16px;
+	display: block;
+}
+
+.search {
+	width: 400px;
+	height: 30px;
+	border: 2px solid black;
+	border-radius: 8px;
+	margin: 32px auto;
+}

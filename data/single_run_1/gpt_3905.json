@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "BIOL-1111",
+    "BIOL-1101 or equivalent"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "BIOM-2093",
+  "courseName": "Genetics"
+}

@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MATH-2780",
+    "MATH-2790"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "MECH-3221",
+  "courseName": "Control Theory"
+}

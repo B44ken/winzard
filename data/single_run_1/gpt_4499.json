@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ESCI-1100",
+    "ESCI-2131"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ESCI-3755",
+  "courseName": "Methods in Great Lakes Geomicrobiology"
+}

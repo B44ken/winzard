@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "CHEM-1103",
+    "GENG-1201"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "GENG-2101",
+  "courseName": "Engineering II"
+}

@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd year"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "ELEC-4390",
+  "courseName": "Multimedia Systems"
+}

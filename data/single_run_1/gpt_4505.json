@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "BIOL-2101",
+    "ESCI-1100"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ESCI-4500",
+  "courseName": "Ecosystem Health"
+}

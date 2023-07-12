@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "VABE-2660 Building Environment I"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "VABE-2860/ARCH-2860",
+  "courseName": "Building Environment II"
+}

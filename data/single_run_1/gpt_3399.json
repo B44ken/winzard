@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MATH-2790",
+    "semester 6 or higher standing"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "MECH-3228",
+  "courseName": "Heat Transfer"
+}

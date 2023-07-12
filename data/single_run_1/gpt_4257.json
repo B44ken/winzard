@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "COMP-3670",
+    "COMP-3680"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-4680",
+  "courseName": "Advanced Networking"
+}

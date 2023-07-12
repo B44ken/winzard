@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "GENG-2500",
+    "Semester 6 or higher standing"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "MECH-4228",
+  "courseName": "Sustainability in Engineering"
+}

@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "PHYS-1400",
+    "PHYS-1410"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "PHYS-3700",
+  "courseName": "Introduction to Medical Physics"
+}

@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "Grade 12 \"U\" Advanced Level Mathematics (MHF4U, MCV4U, MDM4U)",
+    "Grade 11 Functions and Applications (MCF3M)",
+    "Grade 11 Functions (MCR3U)"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "STAT-2910",
+  "courseName": "Statistics for the Sciences"
+}

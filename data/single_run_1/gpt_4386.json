@@ -1,0 +1,19 @@
+{
+  "prerequisites": [
+    "ECON-2210"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ECON-3530",
+  "courseName": "Labour Institutions"
+}
+
+{
+  "prerequisites": [
+    "ECON-2210"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ECON-3730",
+  "courseName": "International Economics: Trade Theory and Policy"
+}

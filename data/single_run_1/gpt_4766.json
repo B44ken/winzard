@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "PHYS-1400",
+    "MATH-1720",
+    "MATH-1250"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "PHYS-1500",
+  "courseName": "From Symmetry to Chaos in the Universe: An Introduction to Theoretical Methods in Contemporary Physics"
+}

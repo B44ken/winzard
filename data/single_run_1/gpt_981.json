@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "FREN-1210",
+    "FREN-1220"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "FREN-2300",
+  "courseName": "Introduction to Linguistics I"
+}

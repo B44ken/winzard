@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ESCI-1120 or ESCI-1130 or ESCI-1100",
+    "SOSC-2500 or STAT-2910 or other University-level mathematics or statistics course"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "ESCI-2141",
+  "courseName": "Hydrology"
+}

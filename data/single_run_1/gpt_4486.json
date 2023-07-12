@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "ESCI-1151"
+  ],
+  "labHours": 2,
+  "lectureHours": 2,
+  "courseCode": "ESCI-2721",
+  "courseName": "Introduction to Image Processing and Remote Sensing"
+}

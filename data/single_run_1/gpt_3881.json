@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "CHEM-2200",
+    "CHEM-3210"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "FRSC-4201",
+  "courseName": "Forensic Chemistry"
+}

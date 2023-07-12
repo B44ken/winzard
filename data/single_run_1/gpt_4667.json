@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MATH-1730",
+    "MATH-1020"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MATH-3160",
+  "courseName": "Combinatorics"
+}

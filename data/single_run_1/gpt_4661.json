@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MATH-1020",
+    "MATH-1250 or MATH-1260 or MATH-1270"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "MATH-2250",
+  "courseName": "Linear Algebra II"
+}

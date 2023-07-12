@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MATH-1720"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "GENG-2220",
+  "courseName": "Treatment of Experiential Data"
+}

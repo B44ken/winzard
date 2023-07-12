@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "BIOL-2101",
+    "BIOL-2111",
+    "BIOM-2131"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "BIOL-3241",
+  "courseName": "Fishes and Fisheries"
+}

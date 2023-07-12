@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "PHYS-2210",
+    "PHYS-2500",
+    "MATH-3550 or PHYS-3610"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "PHYS-3100",
+  "courseName": "Quantum Mechanics I"
+}

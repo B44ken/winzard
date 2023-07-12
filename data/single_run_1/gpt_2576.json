@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "STEN-1000",
+    "MGMT-1000 (for business students)"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "STEN-2900",
+  "courseName": "Fundamentals of Entrepreneurship"
+}

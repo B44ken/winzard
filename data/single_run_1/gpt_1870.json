@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "ARCH 2110",
+    "Architecture Design I and II",
+    "Construction II course"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "VABE-2210/ARCH 2110",
+  "courseName": "Visual Communications III"
+}

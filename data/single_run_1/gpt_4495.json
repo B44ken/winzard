@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "ESCI-2101"
+  ],
+  "labHours": 3,
+  "lectureHours": 2,
+  "courseCode": "ESCI-3721",
+  "courseName": "Environmental Geophysics"
+}

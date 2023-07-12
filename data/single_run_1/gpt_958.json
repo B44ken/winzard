@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ARAB-1100",
+    "ARAB-1110"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ARAB-2100",
+  "courseName": "Intermediate Arabic I"
+}

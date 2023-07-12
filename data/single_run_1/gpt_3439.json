@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "GENG-1190",
+    "GENG-1330"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "INDE-2010",
+  "courseName": "Engineering Management and Globalization"
+}

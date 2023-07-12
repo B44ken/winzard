@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "CMAF-2400",
+    "CMAF-2410"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "CMAF-4430",
+  "courseName": "Film Theory and Criticism"
+}

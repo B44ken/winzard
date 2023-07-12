@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "completion of all Electrical Engineering courses from 1st year",
+    "2nd year",
+    "3rd year"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "ELEC-4190",
+  "courseName": "Digital Communications"
+}

@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "COMP-2120",
+    "COMP-2540",
+    "COMP-2560"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-3750",
+  "courseName": "Selected Topics"
+}

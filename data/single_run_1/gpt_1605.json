@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "SWRK-3360",
+    "SWRK-3370"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "SWRK-3710",
+  "courseName": "Field Education Preparation"
+}

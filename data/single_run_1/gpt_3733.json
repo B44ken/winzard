@@ -1,0 +1,20 @@
+{
+  "prerequisites": [
+    "Successful completion of all required year one required courses"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "NURS-1612",
+  "courseName": "Consolidated Practicum I (C)"
+}
+
+{
+  "prerequisites": [
+    "Open only to Nursing students",
+    "Registration in all courses required for first year fall semester"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "NURS-1900",
+  "courseName": "Writing for the Professional Nurse (T)"
+}

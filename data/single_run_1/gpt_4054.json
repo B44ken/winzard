@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "CHEM-2300"
+  ],
+  "labHours": 1,
+  "lectureHours": 2,
+  "courseCode": "CHEM-4630",
+  "courseName": "Self-Organization by Molecular Design"
+}

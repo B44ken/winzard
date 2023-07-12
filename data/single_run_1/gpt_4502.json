@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ESCI-1100",
+    "STAT-2910 or consent of instructor"
+  ],
+  "labHours": 2,
+  "lectureHours": 2,
+  "courseCode": "ESCI-3801",
+  "courseName": "Scientific Writing and Data Management"
+}

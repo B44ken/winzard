@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "BIOL-2111",
+    "BIOM-2131"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "BIOM-3530",
+  "courseName": "Advanced Cell Biology"
+}

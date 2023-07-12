@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MECH-3233"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MECH-4258",
+  "courseName": "Computational Fluid Dynamics - CFD"
+}

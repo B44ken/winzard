@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MATH-1280 or both Ontario Grade 12 Advanced Functions (MHF4U) and Calculus and Vectors (MCV4U)"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "MATH-1270",
+  "courseName": "Linear Algebra (Engineering)"
+}

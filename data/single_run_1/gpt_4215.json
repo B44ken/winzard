@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "COMP-1047 or COMP-2067 or COMP-1400"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-2057",
+  "courseName": "Introduction to the Internet"
+}

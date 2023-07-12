@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "STAT-4460",
+    "STAT-4550"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "STAT-4560",
+  "courseName": "Statistical Consulting"
+}

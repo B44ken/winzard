@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "PHYS-2210",
+    "MATH-3550 or PHYS-3610"
+  ],
+  "labHours": 1.5,
+  "lectureHours": 3,
+  "courseCode": "PHYS-3900",
+  "courseName": "Techniques in Experimental Physics I"
+}

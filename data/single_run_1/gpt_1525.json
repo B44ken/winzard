@@ -1,0 +1,21 @@
+{
+  "prerequisites": [
+    "PSYC-1150",
+    "PSYC-1160",
+    "four additional courses in Psychology"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "PSYC-3550",
+  "courseName": "Comparative Psychology"
+}
+
+{
+  "prerequisites": [
+    "PSYC-2300"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "PSYC-3580",
+  "courseName": "Cognitive Processes"
+}

@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "FRSC-2007",
+    "Enrollment in Bachelor of Forensic Science Program Majors"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "FRSC-3101",
+  "courseName": "Laboratory in Forensic Science"
+}

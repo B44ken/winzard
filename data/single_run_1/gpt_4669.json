@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MATH-2780",
+    "MATH-2790"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MATH-3550",
+  "courseName": "Introduction to Fourier Series and Special Functions"
+}

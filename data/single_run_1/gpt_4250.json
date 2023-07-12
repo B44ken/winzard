@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "COMP-3150",
+    "COMP-3300"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-4150",
+  "courseName": "Advanced and Practical Database Systems"
+}

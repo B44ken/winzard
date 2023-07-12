@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "GENG-2180",
+    "CIVL-3520"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "CIVL-3640",
+  "courseName": "Structural Steel Design"
+}

@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "POLS-1000",
+    "POLS-1300",
+    "POLS-2120"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "POLS-2140",
+  "courseName": "Legal Process in Canada"
+}

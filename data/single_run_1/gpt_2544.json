@@ -1,0 +1,12 @@
+{
+  "prerequisites": [
+    "STEN-1000",
+    "MGMT-1000 (for Business students)",
+    "MSCI-1000 (for Business students)",
+    "COMP-1047 or COMP-1400 or an equivalent (for Non-Business students)"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MSCI-2250",
+  "courseName": "Introduction to Project Management"
+}

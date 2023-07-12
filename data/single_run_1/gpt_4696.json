@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "STAT-3920",
+    "STAT-3950"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "STAT-4470",
+  "courseName": "Survival Analysis"
+}

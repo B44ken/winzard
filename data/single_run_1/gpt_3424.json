@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "MECH-3220",
+    "MECH-3670",
+    "Semester 7 or higher standing"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MECH-4671",
+  "courseName": "Aerodynamics and Performance"
+}

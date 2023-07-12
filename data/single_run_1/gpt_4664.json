@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MATH-1730",
+    "MATH-1250 or MATH-1260 or MATH-1270"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "MATH-2780",
+  "courseName": "Vector Calculus"
+}

@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "CHEM-2310"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "CHEM-3310",
+  "courseName": "Intermediate Organic Chemistry"
+}

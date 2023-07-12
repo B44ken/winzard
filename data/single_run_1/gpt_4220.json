@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "COMP-1000",
+    "COMP-2120"
+  ],
+  "labHours": 1.5,
+  "lectureHours": 3,
+  "courseCode": "COMP-2140",
+  "courseName": "Computer Languages, Grammars, and Translators"
+}

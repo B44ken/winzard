@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "major average of 70%",
+    "cumulative average of 60%",
+    "BIOM-3530 or BIOM-3500"
+  ],
+  "labHours": 10,
+  "lectureHours": 3,
+  "courseCode": "BIOM-4904",
+  "courseName": "Undergraduate Research in Biomedical Sciences I"
+}

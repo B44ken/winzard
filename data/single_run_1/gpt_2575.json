@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "Student must be enrolled in a co-operative education program"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "STEN-2050",
+  "courseName": "Co-op Work Term I"
+}

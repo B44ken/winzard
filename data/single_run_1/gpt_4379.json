@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ECON-2210",
+    "MATH-1300 or MATH-1760 or MATH-1720"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ECON-3100",
+  "courseName": "Environmental and Resource Economics"
+}

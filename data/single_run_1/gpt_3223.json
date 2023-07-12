@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "GENG-2340"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "ELEC-2200",
+  "courseName": "Circuit Analysis"
+}

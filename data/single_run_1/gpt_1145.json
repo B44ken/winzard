@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "PHIL-2600 or PHIL-1600 or PHIL-1620",
+    "semester 3 or above standing"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "PHIL-2610",
+  "courseName": "Argumentation"
+}

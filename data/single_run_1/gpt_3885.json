@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "FRSC-3101",
+    "FRSC-3010"
+  ],
+  "labHours": 12,
+  "lectureHours": 1,
+  "courseCode": "FRSC-4900",
+  "courseName": "Research Thesis in Forensic Sciences"
+}

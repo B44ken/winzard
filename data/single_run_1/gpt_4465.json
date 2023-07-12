@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "ESCI-1141"
+  ],
+  "labHours": 2,
+  "lectureHours": 2,
+  "courseCode": "ESCI-1151",
+  "courseName": "Fundamentals of Geographic Information Systems and Science"
+}

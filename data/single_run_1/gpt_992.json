@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "FREN-2210",
+    "FREN-2220 or FREN-2230"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "FREN-3250",
+  "courseName": "Error Analysis"
+}

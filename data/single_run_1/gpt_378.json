@@ -1,0 +1,13 @@
+{
+  "prerequisites": [
+    "CMAF-2010",
+    "CMAF-2250",
+    "CMAF-2700",
+    "DRAM-2700",
+    "WORK-2700"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "CMAF-3700",
+  "courseName": "Alternative Media and Digital Activism"
+}

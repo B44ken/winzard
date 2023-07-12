@@ -1,0 +1,12 @@
+{
+  "prerequisites": [
+    "ECON-2220",
+    "ECON-2320",
+    "ECON-3060",
+    "MATH-1730"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ECON-4060",
+  "courseName": "Mathematical Economics II"
+}

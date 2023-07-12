@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "MACS-2140",
+    "MACS-2150",
+    "3000 numbered course in the subject area"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MACS-4000",
+  "courseName": "Directed Individual Studies"
+}

@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "GENG-2320"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "GENG-2200",
+  "courseName": "Numerical Analysis for Engineering"
+}

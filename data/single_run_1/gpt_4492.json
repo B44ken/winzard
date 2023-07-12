@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ESCI-2141",
+    "ESCI-2421"
+  ],
+  "labHours": 1,
+  "lectureHours": 2,
+  "courseCode": "ESCI-3610",
+  "courseName": "Environmental Impact Assessment"
+}

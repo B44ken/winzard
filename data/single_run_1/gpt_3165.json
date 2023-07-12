@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "consent of the supervisor",
+    "Department Head"
+  ],
+  "labHours": 4,
+  "lectureHours": 2,
+  "courseCode": "ENVE-4000",
+  "courseName": "Capstone Design Project"
+}

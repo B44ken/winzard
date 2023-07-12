@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "ESCI-3701",
+    "ESCI-3761",
+    "ESCI-3771"
+  ],
+  "labHours": 0,
+  "lectureHours": 2,
+  "courseCode": "ESCI-4911",
+  "courseName": "GIS Capstone Research Project"
+}

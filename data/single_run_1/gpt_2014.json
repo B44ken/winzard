@@ -1,0 +1,12 @@
+{
+  "prerequisites": [
+    "SACR-2600",
+    "SACR-3910 or SACR-3730 or SACR-3560",
+    "SACR-3900 or SACR-3080",
+    "semester 7 or higher standing"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "SACR-4600",
+  "courseName": "Advanced Seminar in Deviance and Social Issues: Policies and Debates"
+}

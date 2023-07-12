@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "COMP-3150"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-4250",
+  "courseName": "Big Data Analytics and Database Design"
+}

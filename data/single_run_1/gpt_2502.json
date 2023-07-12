@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ACCT-3580",
+    "ACCT-3600"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ACCT-4600",
+  "courseName": "Auditing II"
+}

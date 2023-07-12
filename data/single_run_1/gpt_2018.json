@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "SACR-3910 or SACR-3730 or SACR-3560",
+    "SACR-3900 or SACR-3080 and semester 7 or higher standing",
+    "at least one 3000-level course from the 3000-level criminology course selection"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "SACR-4650",
+  "courseName": "Advanced Seminar in Gender, Law, and Crime"
+}

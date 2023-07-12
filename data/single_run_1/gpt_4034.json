@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "CHEM-2410"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "CHEM-3400",
+  "courseName": "Quantum Chemistry"
+}

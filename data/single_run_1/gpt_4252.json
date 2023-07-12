@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "COMP-3220"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-4220",
+  "courseName": "Agile Software Development"
+}

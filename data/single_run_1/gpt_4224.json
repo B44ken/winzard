@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "COMP-1400"
+  ],
+  "labHours": 1.5,
+  "lectureHours": 3,
+  "courseCode": "COMP-2650",
+  "courseName": "Computer Architecture I: Digital Design"
+}

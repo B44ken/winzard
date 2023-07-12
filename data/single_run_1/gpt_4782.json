@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "PHYS-2500",
+    "MATH-2780",
+    "MATH-2790 or equivalents"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "PHYS-3500",
+  "courseName": "Advanced Classical Mechanics"
+}

@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "CHEM-1100"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "CHEM-1110",
+  "courseName": "General Chemistry II"
+}

@@ -1,0 +1,13 @@
+{
+  "prerequisites": [
+    "EDUC-4000",
+    "EDUC-4050",
+    "EDUC-4100",
+    "EDUC-4150",
+    "EDUC-4200"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "EDUC-4800",
+  "courseName": "Experiential Learning Field Placement"
+}

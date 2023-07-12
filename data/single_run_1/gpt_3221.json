@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "MATH-2780",
+    "MATH-2790"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "ELEC-2110",
+  "courseName": "Computer-Aided Analysis"
+}

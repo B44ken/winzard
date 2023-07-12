@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "CHEM-2400"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "CHEM-2410",
+  "courseName": "Introductory Physical Chemistry II"
+}

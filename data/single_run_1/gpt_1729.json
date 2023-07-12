@@ -1,0 +1,20 @@
+{
+  "prerequisites": [
+    "MACS-2140",
+    "MACS-2150"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MACS-2200",
+  "courseName": "The Planned City as a Work of Art"
+}
+
+{
+  "prerequisites": [
+    "MACS-2140 and MACS-2150 for majors; or semester four standing for non-majors"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MACS-2450",
+  "courseName": "Modern Art"
+}

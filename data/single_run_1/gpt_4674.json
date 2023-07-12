@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "MATH-2780",
+    "MATH-2790",
+    "MATH-1250 or MATH-1260 or MATH-1270"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MATH-3800",
+  "courseName": "Numerical Methods"
+}

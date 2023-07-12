@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MSCI-2230"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MSCI-3230",
+  "courseName": "Data Science Tools and Methods"
+}

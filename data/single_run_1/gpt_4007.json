@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "BIOC-2010",
+    "BIOM-2131"
+  ],
+  "labHours": 6,
+  "lectureHours": 0,
+  "courseCode": "BIOC-3581",
+  "courseName": "Biotechnology Laboratory"
+}

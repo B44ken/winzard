@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "SACR-2600",
+    "SACR-2620",
+    "semester 5 or higher standing"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "SACR-3650",
+  "courseName": "Green Criminology"
+}

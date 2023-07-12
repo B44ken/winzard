@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MSCI-2200"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MSCI-3200",
+  "courseName": "Quantitative Decision Models II"
+}

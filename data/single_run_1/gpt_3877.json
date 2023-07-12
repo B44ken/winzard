@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "A FRSC-3XXX course",
+    "Instructor approval",
+    "Enrolment limited to majors in Forensic Sciences and majors in B.A. Combined in Forensics"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "FRSC-4002",
+  "courseName": "Practicum in Forensic Sciences"
+}

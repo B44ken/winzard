@@ -1,0 +1,12 @@
+{
+  "prerequisites": [
+    "STAT-2920",
+    "STAT-2950",
+    "MATH-1250",
+    "MATH-2790"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "STAT-4410",
+  "courseName": "Stochastic Processes"
+}

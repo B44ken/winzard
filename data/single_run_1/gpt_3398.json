@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "GENG-2220 or STAT-2910"
+  ],
+  "labHours": 1.5,
+  "lectureHours": 3,
+  "courseCode": "MECH-3224",
+  "courseName": "Engineering Measurements"
+}

@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "VABE-2300"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "VABE-2400/ARCH1400",
+  "courseName": "Architectural Design IV"
+}

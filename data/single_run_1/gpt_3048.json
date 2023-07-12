@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "GENG-1110",
+    "MATH-1720"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "GENG-2180",
+  "courseName": "Mechanics of Deformable Bodies"
+}

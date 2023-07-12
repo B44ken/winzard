@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "Grade 12 \"U\" Biology or equivalent",
+    "BIOM-1003",
+    "BIOL-1013"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "BIOL-1101",
+  "courseName": "Cell Biology"
+}

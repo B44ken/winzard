@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MECH-3233"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "MECH-3220",
+  "courseName": "Fluid Mechanics II"
+}

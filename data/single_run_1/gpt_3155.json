@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "ENVE-2200"
+  ],
+  "labHours": 1.5,
+  "lectureHours": 3,
+  "courseCode": "CIVL-4970",
+  "courseName": "Life Cycle Thinking"
+}

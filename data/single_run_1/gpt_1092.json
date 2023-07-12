@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "SPAN-1010",
+    "SPAN-1020"
+  ],
+  "labHours": 0,
+  "lectureHours": 6,
+  "courseCode": "SPAN-2020",
+  "courseName": "Intensive Intermediate Spanish"
+}

@@ -1,0 +1,20 @@
+{
+  "prerequisites": [
+    "WGST-1000 or permission of instructor"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "WGST-3000",
+  "courseName": "Seminar in Emerging Feminist Scholarship"
+}
+
+{
+  "prerequisites": [
+    "two Women's and Gender Studies (WGST-) courses at the 2000-level or above",
+    "at least semester 5 standing"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "WGST-3050",
+  "courseName": "Feminist Theories"
+}

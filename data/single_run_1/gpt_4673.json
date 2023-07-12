@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MATH-2780"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "MATH-3590",
+  "courseName": "Complex Variables"
+}

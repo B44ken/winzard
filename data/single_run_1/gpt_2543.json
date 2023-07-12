@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "MSCI-2130 or COMP-1400"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "MSCI-2230",
+  "courseName": "Introduction to Data Science for Business"
+}

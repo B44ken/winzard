@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "GENG-2180",
+    "CIVL-3550"
+  ],
+  "labHours": 3,
+  "lectureHours": 3,
+  "courseCode": "CIVL-3630",
+  "courseName": "Geotechnical Engineering II"
+}

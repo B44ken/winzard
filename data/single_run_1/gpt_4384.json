@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ECON-2210",
+    "ECON-2310"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "ECON-3410",
+  "courseName": "Economic Growth and Development Theory"
+}

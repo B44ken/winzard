@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "CHEM-1100",
+    "CHEM-1110"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "CHEM-2325",
+  "courseName": "Fundamentals of Organic Chemistry"
+}

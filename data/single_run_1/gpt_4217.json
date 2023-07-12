@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "COMP-1047",
+    "COMP-2057"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-2077",
+  "courseName": "Problem Solving and Information on the Internet"
+}

@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "CHEM-3909",
+    "Students must be enrolled in the Bachelor of Science Honours Chemistry/Biochemistry with Internship stream"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "CHEM-4908",
+  "courseName": "Internship Work Term II"
+}

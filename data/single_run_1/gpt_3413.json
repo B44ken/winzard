@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "Semester 7 or 8 standing for Mechanical Engineering students",
+    "instructor approval"
+  ],
+  "labHours": 3,
+  "lectureHours": 2,
+  "courseCode": "MECH-4212",
+  "courseName": "Mechatronics"
+}

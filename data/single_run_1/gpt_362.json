@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "CMAF-1010",
+    "FILM 1001",
+    "CMAF 1400"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "CMAF-2400",
+  "courseName": "Cinema History I (Pre-War)"
+}

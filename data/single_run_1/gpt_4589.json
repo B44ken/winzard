@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "BIOL-2101",
+    "BIOL-3142"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "BIOL-4220",
+  "courseName": "Science Communication: A Biological Approach"
+}

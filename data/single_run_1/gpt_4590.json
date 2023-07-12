@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "BIOL-2101",
+    "BIOM-2131"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "BIOL-4232",
+  "courseName": "Pollution Ecology"
+}

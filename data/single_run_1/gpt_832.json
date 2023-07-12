@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "WORK-1500",
+    "WGST-1000",
+    "SACR-1100"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "WGST-2400",
+  "courseName": "Work and Equality"
+}

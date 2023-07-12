@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "Ontario Grade 12 Advanced Functions (MHF4U)",
+    "Ontario Grade 12 Calculus and Vectors (MCV4U) or MATH-1780"
+  ],
+  "labHours": 1,
+  "lectureHours": 3,
+  "courseCode": "MATH-1720",
+  "courseName": "Differential Calculus"
+}

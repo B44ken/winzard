@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "GENG-1110 or PHYS-1400"
+  ],
+  "labHours": 2,
+  "lectureHours": 3,
+  "courseCode": "MECH-2210",
+  "courseName": "Dynamics"
+}

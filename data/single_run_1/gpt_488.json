@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "DRAM-1000",
+    "DRAM-2000"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "DRAM-3100",
+  "courseName": "Play Creation"
+}

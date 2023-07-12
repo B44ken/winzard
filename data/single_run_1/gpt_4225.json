@@ -1,0 +1,7 @@
+{
+  "prerequisites": ["COMP-2650"],
+  "labHours": 1.5,
+  "lectureHours": 3,
+  "courseCode": "COMP-2660",
+  "courseName": "Computer Architecture II: Microprocessor Programming"
+}

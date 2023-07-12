@@ -1,0 +1,11 @@
+{
+  "prerequisites": [
+    "PSYC-1150",
+    "PSYC-1160",
+    "four additional courses in Psychology"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "PSYC-4000",
+  "courseName": "Selected Topics in Psychology"
+}

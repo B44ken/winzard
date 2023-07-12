@@ -1,0 +1,9 @@
+{
+  "prerequisites": [
+    "BIOC-2010 or BIOC-2015 or BIOM-2131 or BIOM-2033"
+  ],
+  "labHours": 1.5,
+  "lectureHours": 2,
+  "courseCode": "BIOC-4010",
+  "courseName": "Bioinformatics/Genomics/Proteomics"
+}

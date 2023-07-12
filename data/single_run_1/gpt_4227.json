@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "COMP-1000 or MATH-1720",
+    "COMP-1410"
+  ],
+  "labHours": 0,
+  "lectureHours": 3,
+  "courseCode": "COMP-2750",
+  "courseName": "Selected Topics"
+}

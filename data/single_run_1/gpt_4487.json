@@ -1,0 +1,10 @@
+{
+  "prerequisites": [
+    "ESCI-1100",
+    "MATH-1720 or MATH-1760"
+  ],
+  "labHours": 3,
+  "lectureHours": 2,
+  "courseCode": "ESCI-3301",
+  "courseName": "Hydrogeology"
+}
