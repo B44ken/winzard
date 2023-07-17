@@ -1,7 +1,10 @@
 let courseDatabase = {}
-fetch('gpt-calendar-combined.json').then(response => response.json()).then(data => courseDatabase = data)
+fetch('calendar.json').then(response => response.json()).then(data => courseDatabase = data)
 
-const coursePlan = [[], [], [], [], [], []]
+const coursePlan = []
+for (let i = 0; i < 8; i++) {
+	coursePlan.push([])
+}
 
 const classTemplate = document.querySelector(".class-template").innerHTML;
 
@@ -14,7 +17,10 @@ const clearCourseTable = () => {
 	}
 };
 
+const errors = document.querySelector('.errors')
+
 const populateCoursePlan = () => {
+	errors.innerHTML = ""
 	clearCourseTable();
 
 	for (const semester in coursePlan) {
@@ -25,6 +31,12 @@ const populateCoursePlan = () => {
 				"CLASS",
 				coursePlan[semester][course]
 			);
+		}
+	}
+
+	for(const course of coursePlan.flat()) {
+		if(!verifyCourse(course)) {
+			errors.innerHTML += `<br>${course} sequence error`
 		}
 	}
 };
@@ -49,68 +61,106 @@ const moveClass = (element, shift) => {
 	populateCoursePlan();
 };
 
+const verifyCourse = (course, maxSemester = Infinity) => {
+	// prerequisite match
+	let prerequisites = courseDatabase.find((c) => c.courseCode == course)?.prerequisites;
+	let corequisites = courseDatabase.find((c) => c.courseCode == course)?.corequisites;
+
+	if (prerequisites == undefined) prerequisites = [];
+	if (corequisites == undefined) corequisites = [];
+
+	prerequisites = prerequisites.filter((P) => P.includes("-"));
+	corequisites = corequisites.filter((P) => P.includes("-"));
+
+	const taken = []
+	let takenNow = []
+	for (let semester in coursePlan) {
+		if(coursePlan[semester].includes(course) || semester >= maxSemester) {
+			takenNow = coursePlan[semester]
+			break
+		}
+		else taken.push(...coursePlan[semester])
+	}
+
+	takenNow = takenNow.concat(taken)
+
+	for (let P of prerequisites) {
+		let hasAny = false;
+		// split on "or" or ","
+		P = P.split(" or ");
+		for (let P2 of P) {
+			P2 = P2.trim();
+			if (taken.includes(P2)) hasAny = true;
+		}
+		if (!hasAny) return false;
+	}
+
+	for(let C of corequisites) {
+		let hasAny = false;
+		C = C.split(" or ");
+		for (let C2 of C) {
+			C2 = C2.trim();
+			if (takenNow.includes(C2)) hasAny = true;
+		}
+		if (!hasAny) return false;
+	}
+
+	return true;
+}
+
 const addToPlan = (course, overload = false, fillPrereq = true) => {
 	if(coursePlan.flat().includes(course)) return false
 	
-	let maxCourses = 5;
-	let prerequisites = courseDatabase.find(
-		(c) => c.courseCode == course
-	)?.prerequisites
+	prerequisites = courseDatabase.find((c) => c.courseCode == course)
+		?.prerequisites
+		.filter((P) => P.includes("-"))
 
-	if(prerequisites?.join("").toLowerCase().includes("grade 12")) prerequisites = []
-	
-	if(prerequisites == null) prerequisites = []
+	if(prerequisites == undefined) prerequisites = []
 
-	
-	prerequisites = prerequisites.filter(P => 
-		P.includes('-') // hacky way to filter out non-courses
-	)
-
-	if (overload) maxCourses++;
-
-	for (let semester in coursePlan) {
-		semester = Number(semester);
-		if (semester > 0) {
-			prerequisites = prerequisites.filter((P) => {
-				for(let P2 of P.split("or")) {
-					P2 = P2.trim()
-					 if(coursePlan[semester - 1].includes(P2)) return false
-				}
-				return true
-			})
-		}
-		if (coursePlan[semester].length < maxCourses && prerequisites.length == 0) {
-			coursePlan[semester].push(course);
-			populateCoursePlan();
-			return;
+	for(let semester = 0; semester < coursePlan.length; semester++) {
+		if(verifyCourse(course, semester) && coursePlan[semester].length < (overload ? 5 : 6)) {
+			coursePlan[semester].push(course)
+			populateCoursePlan()
+			return
+		} else if (fillPrereq) {
+			for(P of prerequisites) {
+				P0 = P.split(" or ")[0].trim()
+				console.log(P0)
+				addToPlan(P0, true, true)
+			}
 		}
 	}
-	if (!overload) addToPlan(course, true, fillPrereq);
 	if(fillPrereq) {
-		for(const P of prerequisites) {
-			let hasAny = false
-			for(const P2 of P.split(" or ")) {
-				console.log(P2)
-				if(coursePlan.flat().includes(P2)) hasAny = true
-			}
-			if(!hasAny) {
-				addToPlan(P.split(" or ")[0], false, false)
-			}
-			addToPlan(course, false, false)
-		}
+		addToPlan(course, false, false)
 	}
-	return true
 };
 
 const searchBox = document.querySelector('.search')
 searchBox.addEventListener('keydown', event => {
 	if(event.key == 'Enter') {
-		addToPlan(searchBox.textContent.toUpperCase())
+		let entry = searchBox.textContent
+		let code = entry.slice(0, 4).toUpperCase() + "-" + entry.slice(-4)
+		addToPlan(code)
+
 		setTimeout(() => searchBox.textContent = "", 1)
 	}
 })
 
-setTimeout(() => {
-	addToPlan("MATH-1720")
-	addToPlan("MATH-1730")
-}, 1000)
+const countSemesters = (year = 2023, now = "Fall", total = 8, includeSummer = false) => {
+	let semesters = ["Winter", "Fall"]
+	if(includeSummer)
+		semesters = ["Winter", "Summer", "Fall"]
+	const current = semesters.indexOf(now)
+	let names = []
+	for(let i = 0; i < 8; i++) {
+		let S = semesters[(i + current) % semesters.length]
+		if(S == "Winter") year++
+		names.push(S + " " + year)
+	}
+	return names
+}
+
+const headers = document.querySelectorAll('.semester > .header')
+countSemesters().forEach((S, i) => {
+	headers[i].innerHTML = `<div class="header-label">${S}</div>`
+})

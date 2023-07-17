@@ -29,7 +29,7 @@ main {
 	height: 50px;
 }
 
-.class-name {
+.class-name, .header-label {
 	padding: 16px 0 0 4px;
 	display: inline-block;
 	vertical-align: middle;
@@ -44,8 +44,14 @@ main {
 
 .search {
 	width: 400px;
-	height: 30px;
 	border: 2px solid black;
 	border-radius: 8px;
 	margin: 32px auto;
+	padding: 6px;
+}
+
+.errors {
+	height: 80px;
+	overflow-y: scroll;
+	margin: 16px;
 }
