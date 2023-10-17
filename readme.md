@@ -2,7 +2,7 @@
 completely a work in progress, i have absolutely no direction whatsoever here, yadda yadda
 
 ### using the uwinsite scraper
-the demo is at `demo.py`. to run, use 
+the demo is at `uwinsite/demo.py`. to run, use 
 ```bash
 python3 demo.py id="your session id" search="search term"
 ```
