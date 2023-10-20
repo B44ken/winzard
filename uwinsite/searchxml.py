@@ -10,9 +10,11 @@ def scrape_search_list(xml):
 
     for a in anchor:
         title = a.text.strip()
-        course_id = re.findall(r'UGRD=([^=]+)=', a['href'])[0]
+        dbcsprd = re.findall(r'DBCSPRD_([0-9]+)', a['href'])[0]
+        course_id = re.findall(r'U?GRA?D=([^=]+)=', a['href'])[0]
         results += [{
             'title': title,
+            'dbcsprd': dbcsprd,
             'course_id': course_id
         }]
 

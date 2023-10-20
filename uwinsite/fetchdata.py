@@ -1,17 +1,17 @@
 import requests, sys
 
-def fetch_course_id(c_id, session_id):
+def fetch_course_id(c_id, dbcsprd, session_id):
     response = requests.get(
-        'https://student.uwindsor.ca/psc/DBCSPRD_11/EMPLOYEE/SA/c/SSR_STUDENT_FL.SSR_CRSE_INFO_FL.GBL',
+        # EMPLOYEE/SA/c/SSR_STUDENT_FL.SSR_CRSE_INFO_FL.GBL?Page=SSR_CRSE_INFO_FL&Action=U&Page=SSR_CS_WRAP_FL&Action=U&ACAD_CAREER=UGRD&CRSE_ID=004800&CRSE_OFFER_NBR=1&INSTITUTION=UWIN1&STRM=2241
+        f'https://student.uwindsor.ca/psc/DBCSPRD_{dbcsprd}/EMPLOYEE/SA/c/SSR_STUDENT_FL.SSR_CRSE_INFO_FL.GBL',
         params = {
             'Page': 'SSR_CRSE_INFO_FL',
             'Action': 'U',
-            'ACAD_CAREER': 'UGRD',
+            'ACAD_CAREER': 'UGRD', # todo: check for grad/undergrad 
             'CRSE_ID': c_id,
             'CRSE_OFFER_NBR': '1',
             'INSTITUTION': 'UWIN1',
             'STRM': '2241',
-            'RVF_SW': '1',
         },
         cookies = {
             'psprdweb-PORTAL-PSJSESSIONID': session_id
@@ -47,5 +47,4 @@ def fetch_course_search(search, session_id):
         return None
 
 if __name__ == '__main__':
-    # print(fetch_course_id('005100'))
     print(fetch_course_search('MATH 1730'))

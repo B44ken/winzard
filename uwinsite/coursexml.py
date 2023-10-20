@@ -1,29 +1,35 @@
 import bs4, sys, json
 
 def scrape_course_options(xml):
-    xml = xml.replace('<![CDATA[', '').replace(']]>', '')
-    soup = bs4.BeautifulSoup(xml, 'xml')
+    # xml = xml.replace('<![CDATA[', '').replace(']]>', '')
+    soup = bs4.BeautifulSoup(xml, 'lxml')
 
     field_classes = ['cmpnt_class_nbr', 'dates', 'days_times', 'room', 'instructor', 'seats']
-    field_objects = [ soup.select(f'.ps_grid-cell.{c.upper()}') for c in field_classes ]
 
+    field_objects = [ soup.select(f'td.{c.upper()}') for c in field_classes ]
     options = []
 
     for i in range(len(field_objects[0])):
         dates = field_objects[1][i].text.strip()
-        times = field_objects[2][i].text.strip().split('\n')
+        times = field_objects[2][i].text.strip().replace('\r', '\n').split('\n')
+
         room = field_objects[3][i].text.strip().split('\n')
         instructor = field_objects[4][i].text.strip().split('\n')
         seats = field_objects[5][i].text.strip().split('\n')
-        code = 'MATH1730'
+        code = 'CODE0001'
+        days = []
+        hours = []
+        if times[0] != 'Not Applicable':
+            days = times[0].split(' ')
+            hours = times[1].split(' to ')
         opt = {
             'dates': dates.split('\u00c2\u00a0- '),
             'code': code,
             'lab_exists': False,
             'times': {
                 'lecture': {
-                    'days': times[0].split(' '),
-                    'hours': times[1].split(' to '),
+                    'days': days,
+                    'hours': hours,
                 }
             },
             'room': {
