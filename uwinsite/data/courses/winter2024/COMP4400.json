@@ -1,1 +1,29 @@
-[{"dates": ["08/01/2024\u00a0- 08/04/2024"], "code": "CODE0001", "lab_exists": false, "times": {"lecture": {"days": ["Monday"], "hours": ["14:30", "17:20"]}}, "room": {"lecture": "Memorial Hall 105"}, "instructor": {"lecture": "Jessica Chen"}, "seats": {"lecture": "Open Seats 30 of 30"}}]
+[
+    {
+        "dates": [
+            "08/01/2024 - 08/04/2024"
+        ],
+        "code": "004873",
+        "lab_exists": false,
+        "times": {
+            "lecture": {
+                "days": [
+                    "Monday"
+                ],
+                "hours": [
+                    "14:30",
+                    "17:20"
+                ]
+            }
+        },
+        "room": {
+            "lecture": "Memorial Hall 105"
+        },
+        "instructor": {
+            "lecture": "Jessica Chen"
+        },
+        "seats": {
+            "lecture": "Open Seats 30 of 30"
+        }
+    }
+]

@@ -1,11 +1,9 @@
 import coursexml, searchxml, fetchdata
-import os, sys
+import os, sys, json
 
 search_term, session_id = None, None
 
 for a in sys.argv[1:]:
-#     if 'id=' == a[:3]:
-#         session_id = a[3:]
     if 'search=' == a[:7]:
         search_term = a[7:]
 
@@ -27,12 +25,16 @@ print(f'{len(search_results)} results found.')
 
 for i in search_results:
     print(f'using {i["title"]}, {i["course_id"]}')
-    fetched_course = fetchdata.fetch_course_id(search_results[0]['course_id'], search_results[0]['dbcsprd'], session_id)
-    course_options = coursexml.scrape_course_options(fetched_course)
+    fetched_course = fetchdata.fetch_course_id(i['course_id'], i['dbcsprd'], session_id)
+    course_options = coursexml.scrape_course_options(fetched_course, i['course_id'])
+
     print(f'{len(course_options)} options found.')
 
-    for i in course_options:
-        days = i["times"]["lecture"]["days"]
-        hours = i["times"]["lecture"]["hours"]
-        instructor = i["instructor"]["lecture"]
-        print(f'{" ".join(days)}, {" ".join(hours)}, {instructor}')
+    dump = json.dumps(course_options, indent=4)
+    open(f'data/courses/winter2024/{i["title"].replace(" ","")}.json', 'w+').write(dump)
+
+    # for i in course_options:
+    #     days = i["times"]["lecture"]["days"]
+    #     hours = i["times"]["lecture"]["hours"]
+    #     instructor = i["instructor"]["lecture"]
+    #     print(f'{" ".join(days)}, {" ".join(hours)}, {instructor}')

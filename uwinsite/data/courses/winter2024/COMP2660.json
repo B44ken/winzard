@@ -1,1 +1,162 @@
-[{"dates": ["08/01/2024\u00a0- 08/04/2024"], "code": "CODE0001", "lab_exists": true, "times": {"lecture": {"days": ["Monday", "Wednesday"], "hours": ["08:30", "09:50"]}, "lab": {"days": ["Monday"], "hours": ["10:00", "11:20"]}}, "room": {"lecture": "Toldo Health Education Ctr 102", "lab": "Lambton Tower 3107"}, "instructor": {"lecture": "Alioune Ngom", "lab": "Alioune Ngom"}, "seats": {"lecture": "Open Seats 120 of 120", "lab": "Open Seats 30 of 30"}}, {"dates": ["08/01/2024\u00a0- 08/04/2024"], "code": "CODE0001", "lab_exists": true, "times": {"lecture": {"days": ["Monday", "Wednesday"], "hours": ["08:30", "09:50"]}, "lab": {"days": ["Wednesday"], "hours": ["11:30", "12:50"]}}, "room": {"lecture": "Toldo Health Education Ctr 102", "lab": "Lambton Tower 3107"}, "instructor": {"lecture": "Alioune Ngom", "lab": "Alioune Ngom"}, "seats": {"lecture": "Open Seats 120 of 120", "lab": "Open Seats 30 of 30"}}, {"dates": ["08/01/2024\u00a0- 08/04/2024"], "code": "CODE0001", "lab_exists": true, "times": {"lecture": {"days": ["Monday", "Wednesday"], "hours": ["08:30", "09:50"]}, "lab": {"days": ["Tuesday"], "hours": ["11:30", "12:50"]}}, "room": {"lecture": "Toldo Health Education Ctr 102", "lab": "Lambton Tower 3107"}, "instructor": {"lecture": "Alioune Ngom", "lab": "Alioune Ngom"}, "seats": {"lecture": "Open Seats 120 of 120", "lab": "Open Seats 30 of 30"}}, {"dates": ["08/01/2024\u00a0- 08/04/2024"], "code": "CODE0001", "lab_exists": true, "times": {"lecture": {"days": ["Monday", "Wednesday"], "hours": ["08:30", "09:50"]}, "lab": {"days": ["Wednesday"], "hours": ["10:00", "11:20"]}}, "room": {"lecture": "Toldo Health Education Ctr 102", "lab": "Lambton Tower 3107"}, "instructor": {"lecture": "Alioune Ngom", "lab": "Alioune Ngom"}, "seats": {"lecture": "Open Seats 120 of 120", "lab": "Open Seats 30 of 30"}}]
+[
+    {
+        "dates": [
+            "08/01/2024 - 08/04/2024"
+        ],
+        "code": "004819",
+        "lab_exists": true,
+        "times": {
+            "lecture": {
+                "days": [
+                    "Monday",
+                    "Wednesday"
+                ],
+                "hours": [
+                    "08:30",
+                    "09:50"
+                ]
+            },
+            "lab": {
+                "days": [
+                    "Monday"
+                ],
+                "hours": [
+                    "10:00",
+                    "11:20"
+                ]
+            }
+        },
+        "room": {
+            "lecture": "Toldo Health Education Ctr 102",
+            "lab": "Lambton Tower 3107"
+        },
+        "instructor": {
+            "lecture": "Alioune Ngom",
+            "lab": "Alioune Ngom"
+        },
+        "seats": {
+            "lecture": "Open Seats 120 of 120",
+            "lab": "Open Seats 30 of 30"
+        }
+    },
+    {
+        "dates": [
+            "08/01/2024 - 08/04/2024"
+        ],
+        "code": "004819",
+        "lab_exists": true,
+        "times": {
+            "lecture": {
+                "days": [
+                    "Monday",
+                    "Wednesday"
+                ],
+                "hours": [
+                    "08:30",
+                    "09:50"
+                ]
+            },
+            "lab": {
+                "days": [
+                    "Wednesday"
+                ],
+                "hours": [
+                    "11:30",
+                    "12:50"
+                ]
+            }
+        },
+        "room": {
+            "lecture": "Toldo Health Education Ctr 102",
+            "lab": "Lambton Tower 3107"
+        },
+        "instructor": {
+            "lecture": "Alioune Ngom",
+            "lab": "Alioune Ngom"
+        },
+        "seats": {
+            "lecture": "Open Seats 120 of 120",
+            "lab": "Open Seats 30 of 30"
+        }
+    },
+    {
+        "dates": [
+            "08/01/2024 - 08/04/2024"
+        ],
+        "code": "004819",
+        "lab_exists": true,
+        "times": {
+            "lecture": {
+                "days": [
+                    "Monday",
+                    "Wednesday"
+                ],
+                "hours": [
+                    "08:30",
+                    "09:50"
+                ]
+            },
+            "lab": {
+                "days": [
+                    "Tuesday"
+                ],
+                "hours": [
+                    "11:30",
+                    "12:50"
+                ]
+            }
+        },
+        "room": {
+            "lecture": "Toldo Health Education Ctr 102",
+            "lab": "Lambton Tower 3107"
+        },
+        "instructor": {
+            "lecture": "Alioune Ngom",
+            "lab": "Alioune Ngom"
+        },
+        "seats": {
+            "lecture": "Open Seats 120 of 120",
+            "lab": "Open Seats 30 of 30"
+        }
+    },
+    {
+        "dates": [
+            "08/01/2024 - 08/04/2024"
+        ],
+        "code": "004819",
+        "lab_exists": true,
+        "times": {
+            "lecture": {
+                "days": [
+                    "Monday",
+                    "Wednesday"
+                ],
+                "hours": [
+                    "08:30",
+                    "09:50"
+                ]
+            },
+            "lab": {
+                "days": [
+                    "Wednesday"
+                ],
+                "hours": [
+                    "10:00",
+                    "11:20"
+                ]
+            }
+        },
+        "room": {
+            "lecture": "Toldo Health Education Ctr 102",
+            "lab": "Lambton Tower 3107"
+        },
+        "instructor": {
+            "lecture": "Alioune Ngom",
+            "lab": "Alioune Ngom"
+        },
+        "seats": {
+            "lecture": "Open Seats 120 of 120",
+            "lab": "Open Seats 30 of 30"
+        }
+    }
+]

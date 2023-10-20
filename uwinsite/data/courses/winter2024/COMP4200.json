@@ -1,1 +1,29 @@
-[{"dates": ["08/01/2024\u00a0- 08/04/2024"], "code": "CODE0001", "lab_exists": false, "times": {"lecture": {"days": ["Thursday"], "hours": ["19:00", "21:50"]}}, "room": {"lecture": "Biology Building 121"}, "instructor": {"lecture": "To be Announced"}, "seats": {"lecture": "Open Seats 75 of 75"}}]
+[
+    {
+        "dates": [
+            "08/01/2024 - 08/04/2024"
+        ],
+        "code": "004866",
+        "lab_exists": false,
+        "times": {
+            "lecture": {
+                "days": [
+                    "Thursday"
+                ],
+                "hours": [
+                    "19:00",
+                    "21:50"
+                ]
+            }
+        },
+        "room": {
+            "lecture": "Biology Building 121"
+        },
+        "instructor": {
+            "lecture": "To be Announced"
+        },
+        "seats": {
+            "lecture": "Open Seats 75 of 75"
+        }
+    }
+]

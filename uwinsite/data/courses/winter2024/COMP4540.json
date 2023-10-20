@@ -1,1 +1,30 @@
-[{"dates": ["08/01/2024\u00a0- 08/04/2024"], "code": "CODE0001", "lab_exists": false, "times": {"lecture": {"days": ["Tuesday", "Thursday"], "hours": ["13:00", "14:20"]}}, "room": {"lecture": "Biology Building 121"}, "instructor": {"lecture": "Peter Tsin"}, "seats": {"lecture": "Open Seats 60 of 60"}}]
+[
+    {
+        "dates": [
+            "08/01/2024 - 08/04/2024"
+        ],
+        "code": "004880",
+        "lab_exists": false,
+        "times": {
+            "lecture": {
+                "days": [
+                    "Tuesday",
+                    "Thursday"
+                ],
+                "hours": [
+                    "13:00",
+                    "14:20"
+                ]
+            }
+        },
+        "room": {
+            "lecture": "Biology Building 121"
+        },
+        "instructor": {
+            "lecture": "Peter Tsin"
+        },
+        "seats": {
+            "lecture": "Open Seats 60 of 60"
+        }
+    }
+]
