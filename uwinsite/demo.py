@@ -1,19 +1,17 @@
+INCLUDE_GRADUATE_COURSES = False
+# graduate courses aren't supported at the moment
+
 import coursexml, searchxml, fetchdata
 import os, sys, json
-
-search_term, session_id = None, None
-
-for a in sys.argv[1:]:
-    if 'search=' == a[:7]:
-        search_term = a[7:]
 
 session_id = os.environ.get('SESSION_ID')
 if session_id is None:
     print('supply a session id by exporting `SESSION_ID`')
     exit()
 
+search_term = sys.argv[1]
 if search_term is None:
-    print('supply a search term with the parameter `search=$SEARCH_TERM`')
+    print('supply a search term')
     exit()
 
 print(f'searching for "{search_term}"')
@@ -24,17 +22,16 @@ search_results = searchxml.scrape_search_list(fetched_search)
 print(f'{len(search_results)} results found.')
 
 for i in search_results:
-    print(f'using {i["title"]}, {i["course_id"]}')
+    # graduate courses have first digit > 4
+    is_graduate = int(i['title'][5]) > 4
+    if not INCLUDE_GRADUATE_COURSES and is_graduate:
+        continue
+
+    print(f'using {i["title"]}')
     fetched_course = fetchdata.fetch_course_id(i['course_id'], i['dbcsprd'], session_id)
-    course_options = coursexml.scrape_course_options(fetched_course, i['course_id'])
+    course_options = coursexml.scrape_course_options(fetched_course, i['title'])
 
     print(f'{len(course_options)} options found.')
 
     dump = json.dumps(course_options, indent=4)
     open(f'data/courses/winter2024/{i["title"].replace(" ","")}.json', 'w+').write(dump)
-
-    # for i in course_options:
-    #     days = i["times"]["lecture"]["days"]
-    #     hours = i["times"]["lecture"]["hours"]
-    #     instructor = i["instructor"]["lecture"]
-    #     print(f'{" ".join(days)}, {" ".join(hours)}, {instructor}')

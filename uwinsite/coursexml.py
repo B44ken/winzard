@@ -11,55 +11,53 @@ def scrape_course_options(xml, course_code='NULL0001'):
     
     options = []
     for i in range(len(field_objects[0])):
-        try:
-            for j in range(len(field_objects)):
+        for j in range(len(field_objects)):
+            try:
                 field_objects[j][i] = field_objects[j][i].text.strip().replace('\u00a0', ' ').replace('\r', '\n').replace('\n\n', '\n')
+            except IndexError as err:
+                field_objects[j] += ['Parse Error']
 
-            dates = field_objects[1][i]
-            times = field_objects[2][i].split('\n')
-            room = field_objects[3][i].split('\n')
-            instructor = field_objects[4][i].split('\n')
-            seats = field_objects[5][i].split('\n')
-            code = course_code
-            days = []
-            hours = []
-            if times[0] != 'Not Applicable':
-                days = times[0].split(' ')
-                hours = times[1].split(' to ')
-            opt = {
-                'dates': dates.split('\u00a0- '),
-                'code': course_code,
-                'lab_exists': False,
-                'times': {
-                    'lecture': {
-                        'days': days,
-                        'hours': hours,
-                    }
-                },
-                'room': {
-                    'lecture': room[0]
-                },
-                'instructor': {
-                    'lecture': instructor[0]
-                },
-                'seats': {
-                    'lecture': seats[0]
+        dates = field_objects[1][i]
+        times = field_objects[2][i].split('\n')
+        room = field_objects[3][i].split('\n')
+        instructor = field_objects[4][i].split('\n')
+        seats = field_objects[5][i].split('\n')
+        days = []
+        hours = []
+        if times[0] != 'Not Applicable':
+            days = times[0].split(' ')
+            hours = times[1].split(' to ')
+        opt = {
+            'dates': dates.split('\u00a0- '),
+            'code': course_code,
+            'lab_exists': False,
+            'times': {
+                'lecture': {
+                    'days': days,
+                    'hours': hours,
                 }
+            },
+            'room': {
+                'lecture': room[0]
+            },
+            'instructor': {
+                'lecture': instructor[0]
+            },
+            'seats': {
+                'lecture': seats[0]
             }
-            if len(times) == 4:
-                opt['times']['lab'] = {
-                    'days': times[2].split(' '),
-                    'hours': times[3].split(' to '),
-                }
-                opt['room']['lab'] = room[1]
-                opt['instructor']['lab'] = instructor[1]
-                opt['seats']['lab'] = seats[1]
-                opt['lab_exists'] = True
+        }
+        if len(times) == 4:
+            opt['times']['lab'] = {
+                'days': times[2].split(' '),
+                'hours': times[3].split(' to '),
+            }
+            opt['room']['lab'] = room[1]
+            opt['instructor']['lab'] = instructor[1]
+            opt['seats']['lab'] = seats[1]
+            opt['lab_exists'] = True
 
-            options += [opt]
-        except IndexError:
-            print(f'failed to parse {i} of {course}')
-            pass
+        options += [opt]
     return options
 
 if __name__ == '__main__':
