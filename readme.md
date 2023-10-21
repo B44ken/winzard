@@ -14,6 +14,7 @@ on [student.uwindsor.ca](https://student.uwindsor.ca), the session id is stored 
 	- **data** (outputs such as course data)
 		- **courses**
 			- **winter2024**
+		- **winter2024.json** (all courses in winter 2024)
 	- demo.py (scraper demo)
 - **web** (prototypes for the frontend)
 	- **planner-alpha** (cross-semester degree planner/generator)
