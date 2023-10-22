@@ -10,7 +10,9 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-func get_database() *mongo.Database {
+var db *mongo.Database
+
+func database_connect() *mongo.Database {
 	mongo_pass := os.Getenv("MONGO_PASS")
 
 	if mongo_pass == "" {
@@ -26,10 +28,11 @@ func get_database() *mongo.Database {
 		panic(err)
 	}
 
-	return client.Database("winzard")
+	db = client.Database("winzard")
+	return db
 }
 
-func get_course_options(db *mongo.Database, code string) []CourseOption {
+func get_course_options(code string) []CourseOption {
 	var course_options []CourseOption
 
 	collection := db.Collection("course_options_winter2024")
@@ -39,7 +42,7 @@ func get_course_options(db *mongo.Database, code string) []CourseOption {
 	return course_options
 }
 
-func get_course_details(db *mongo.Database, code string) CourseDetails {
+func get_course_details(code string) CourseDetails {
 	var course_details CourseDetails
 
 	collection := db.Collection("course_details")
@@ -48,7 +51,7 @@ func get_course_details(db *mongo.Database, code string) CourseDetails {
 	return course_details
 }
 
-func search_course_details(db *mongo.Database, query string) []CourseDetails {
+func search_course_details(query string) []CourseDetails {
 	collection := db.Collection("course_details")
 
 	pipeline := mongo.Pipeline([]bson.D{bson.D{
