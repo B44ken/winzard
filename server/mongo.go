@@ -22,7 +22,6 @@ func get_database() *mongo.Database {
 	opts := options.Client().ApplyURI("mongodb+srv://b44ken:" + mongo_pass + "@winzard.0puyoun.mongodb.net/?retryWrites=true&w=majority").SetServerAPIOptions(serverAPI)
 
 	client, err := mongo.Connect(context.TODO(), opts)
-
 	if err != nil {
 		panic(err)
 	}
@@ -35,7 +34,6 @@ func get_course_options(db *mongo.Database, code string) []CourseOption {
 
 	collection := db.Collection("course_options_winter2024")
 	search, _ := collection.Find(context.Background(), bson.M{"code": code})
-
 	search.All(context.Background(), &course_options)
 
 	return course_options
@@ -45,7 +43,6 @@ func get_course_details(db *mongo.Database, code string) CourseDetails {
 	var course_details CourseDetails
 
 	collection := db.Collection("course_details")
-
 	collection.FindOne(context.Background(), bson.M{"code": code}).Decode(&course_details)
 
 	return course_details
@@ -54,7 +51,7 @@ func get_course_details(db *mongo.Database, code string) CourseDetails {
 func search_course_details(db *mongo.Database, query string) []CourseDetails {
 	collection := db.Collection("course_details")
 
-	search := bson.D{
+	pipeline := mongo.Pipeline([]bson.D{bson.D{
 		{"$search", bson.D{
 			{"index", "default"},
 			{"text", bson.D{
@@ -64,19 +61,14 @@ func search_course_details(db *mongo.Database, query string) []CourseDetails {
 				}},
 			}},
 		}},
-	}
+	}})
 
-	pipe := mongo.Pipeline([]bson.D{search})
-
-	cursor, err := collection.Aggregate(context.Background(), pipe)
-
+	cursor, err := collection.Aggregate(context.Background(), pipeline)
 	if err != nil {
 		panic(err)
 	}
 
 	var results []CourseDetails
-
 	cursor.All(context.Background(), &results)
-
 	return results
 }
