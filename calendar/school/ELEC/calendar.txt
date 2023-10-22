@@ -1,0 +1,276 @@
+ELEC-2110. Computer-Aided Analysis
+Object oriented programming in C++ covering most of the basic concepts. Development of Classes for
+matrix operations, complex numbers, etc. The rest of the course covers class development for a set of
+numerical schemes that include: Gauss-Jordan Method for solving Linear Simultaneous Algebraic
+Equations; Matrix inversion; Root finding using the Newton-Raphson and the half-interval methods; Lin-
+Bairstow method for Roots of Polynomials; Least-squares fitting; Numerical Integration using the
+Trapezoidal and Simpson’s 1/3 rule; Solution of Ordinary Differential Equations of any order using Euler,
+Improved Euler and the fourth-order Runge-Kutta methods. (Corequisites: MATH-2780 and MATH-2790)
+(3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-2170.Digital Logic Design I
+Boolean algebra and logic gates; simplification of Boolean functions; arithmetic operations; analysis and
+design of combinatorial logic circuits with SSI, MSI, and LSI; sequential logic components; registers;
+counters and memory units; analysis and synthesis of sequential synchronous and asynchronous
+networks. (Co-requisites: MATH-2780 and MATH-2790) (3 lecture, 2 Laboratory/tutorial hours or
+equivalent a week.)
+
+ELEC-2200. Circuit Analysis
+Sinusoidal steady-state analysis; complex power in single and three-phase systems; magnetically coupled
+circuits; circuit analysis in the s-domain; frequency response; two-port networks; and computer-aided
+analysis and design. (3 lecture, 3.0 laboratory/tutorial hours a week.) (Prerequisite: GENG-2340.) (Credit
+cannot be obtained for ELEC-2200 and ELEC-2140.)
+
+ELEC-2240. Signals and Systems
+Discrete and Continuous-Time Signals and Systems, Discrete and Continuous-Time Linear Time-Invariant
+Systems, System Analysis in Time Domain, System Analysis in Frequency Domain, Convolution,
+Differential Equation Models, Fourier series, the Fourier Transform, the Laplace Transform and it's
+Applications, Sampling of Systems. (Prerequisites: MATH-2780 and MATH-2790) (3 lecture, 1.5 laboratory
+hours and 1.5 tutorial hours a week.)
+
+ELEC-2250. Physical Electronics
+This course covers crystal structures. properties of semiconductor materials. Schrodinger wave
+equation. energy band theory. intrinsic and extrinsic semiconductors. charge carriers in
+semiconductors. thermal equilibrium carrier concentrations. carrier transport mechanisms. non-
+equilibrium excess carriers in semiconductors, Metal-Oxide-Semiconductor Field-Effect Transistors
+(MOSFET), and Bipolar Junction Transistors (BJT). (Prerequisites: MATH-2780 and MATH-2790) (3 lecture,
+2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-2260. Electronics I
+Classification of signals; introduction to diodes; rectifier circuits, Zener diode, limiting and clamping
+circuits; Op amp amplifier configurations, Op amp distortion, non ideal op amp performance; active
+filters, Tow-Thomas Biquad; Introduction to data converters; oscillators; super-diodes; pulse generation.
+(Prerequisites: MATH-2780 and MATH-2790) (3 lecture, 1.5 laboratory hours and 1.5 tutorial hours a
+week.)
+
+ELEC-2280. Electromagnetic Fields
+Static electric fields; Coulomb’s law, Gauss’s law and its applications; electric potential; dielectrics;
+boundary conditions; capacitance; resistance; steady electric currents, current density, boundary
+condition for current density, equation of continuity and Kirchhoff’s law; power dissipation; static
+magnetic fields; Biot-Savart’s law, Ampere’s law; vector magnetic potential; magnetic dipole; magnetic
+circuits; boundary conditions for magnetic fields; magnetic forces and torque; induction current.
+(Prerequisites: MATH-2780 and MATH-2790) (3 lecture, 2 laboratory/tutorial hours or equivalent a
+week.)
+
+Note: Students must have completed all the 1st year courses and at least ten (10) of their 2nd year
+courses before being allowed to register in the 3rd year courses, including all pre-requisite courses
+required for registration in the 3rd year courses.
+
+ELEC-3130.Electromechanical Systems
+Machinery principles; transformers; AC machinery fundamentals; synchronous generators; synchronous
+and induction motors; DC machinery fundamentals; DC motors; electromechanical energy conversion;
+three-phase concepts; special-purpose motors. (Prerequisites: MATH-2780, MATH-2790, ELEC-2250.) (3
+lecture, 2 laboratory hours or equivalent a week.)
+
+ELEC-3160. Electronics II
+Analog amplification; small-signal modeling of analog circuits; differential-amplifier topology; BJT,
+MOSFET and JFET differential amplifiers; frequency response and time-dependent circuit behavior;
+feedback and stability; multistage and power amplifiers; active filters and oscillators; use of CAD in
+modern transistor circuit design. (Prerequisites: MATH-2780, MATH-2790 and ELEC-2260.) (3 lecture, 1.5
+laboratory hours and 1 hour tutorial.)
+
+ELEC-3240. Control Systems I
+Transfer function and state-space model for linear time-invariant systems; linearization of nonlinear
+systems; controllability and observability; transient performance; stability; tracking performance;
+Proportional-Integral-Derivative (PID) control design; frequency response and root locus (Prerequisites:
+MATH-2780, MATH-2790, ELEC-3130.) (3 lecture, 1.5 laboratory hours and 1.5 tutorial hours a week.)
+
+ELEC-3270. Microprocessors
+Microprocessor systems (8 and 16 bit) and architecture; data representations, arithmetic units; memory
+structures; complex instruction set; accumulator, index, and memory reference instructions; addressing
+modes; stacks, subroutines, and other instructions; interrupts and timing; interfacing I/O devices and
+data converters; software development systems and assemblers; code implementation on
+microcontrollers. (Prerequisites: MATH-2780, MATH-2790, ELEC-2170, ELEC-3160 and ELEC-3300.) (3
+lecture, 3 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-3290. Analog Communications
+Analog communication systems; information measure; signals and noise; Fourier transform and spectra;
+bandwidth of signals; analog modulation and demodulation systems; AM, FM, TV transmitters and
+receivers, detector circuits. (Prerequisites: MATH-2780, MATH-2790 and ELEC-3160.) (3 lecture, 1.5
+laboratory hours and 1.5 tutorial hours a week.)
+
+ELEC-3300. Digital Logic Design II
+Contemporary digital system design; programmable logic; device architectures; reconfigurable
+computing; design entry methods; VHDL (Hardware Description Language); Electronic Design Automation
+(EDA) tools; combinational and sequential logic design, implementation using programmable logic
+devices. (Prerequisites: MATH-2780, MATH-2790 and ELEC-2170.) (3 lecture, 3 laboratory/tutorial hours
+or equivalent a week.)
+
+ELEC-4000. Capstone Design Project
+Team based design project satisfying the "CAPSTONE DESIGN PROJECT REQUIREMENTS", available from
+the Department of Electrical and Computer Engineering. Gives the student significant design experience
+and builds on the knowledge and skills acquired in earlier course work. Provides an exposure to
+teamwork so as to emulate a typical professional design environment. Computers are to be used both in
+the execution of the design methodology and the management of the design project. (Prerequisites:
+completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd year.) (6 laboratory hours
+per week; that must be completed over two consecutive winter and summer terms.) 2 semester course.
+(This is an experiential learning course.)
+
+ELEC-4100. Directed Study I
+The objective of this course is to provide an opportunity for the exceptional fourth-year student with a
+demonstrated record of scholarship to work in close accord with a faculty member on a project of mutual
+interest. A written report and oral presentation are required for evaluation by the Department. A
+Directed Study course may be taken by an eligible student in place of a fourth-year unspecified course.
+(Prerequisite: an 11.0 GPA or better in the third year and permission of the Department Head.) (For the
+purposes of assigning grades and determining averages, 3 lecture hours per week have been allocated to
+the course.)
+
+ELEC-4190. Digital Communications
+Digital communication systems; discrete Fourier transform; sampling theory; A/D converters; digital
+modulation; time-division multiplexing; packet transmission; random processes and spectral analysis for
+digital systems; error probabilities; noise; introduction to information theory. (Prerequisites: completion
+of all Electrical Engineering courses from 1st year, 2nd year and 3rd year.) (3 lecture, 2
+laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4200. Directed Study II
+The objective of this course is to provide an opportunity for the exceptional fourth-year student with a
+demonstrated record of scholarship to work in close accord with a faculty member on a project of mutual
+interest. A written report and oral presentation are required for evaluation. A Directed Study course may
+be taken by an eligible student in place of a fourth-year general option course. (Prerequisite: an 11.0 GPA
+or better in the third year and permission of the Department Head.) (For the purposes of assigning
+grades and determining averages, 3 lecture hours per week have been allocated to the course.)
+
+ELEC-4310. Control Systems II
+Stability and performance analysis in frequency domain; lead-lag control design in frequency domain;
+elementary observer and control design in state space; z- transformation and z-plane analysis; direct and
+indirect discrete-time control design; implementation of digital control. (Prerequisites: completion of all
+Electrical Engineering courses from 1st year, 2nd year and 3rd year.) (3 lecture, 1.5 laboratory hours and
+1.5 tutorial hours a week.)
+
+ELEC-4320. EM Waves and Radiating Systems
+Maxwell equations; time varying potentials; time harmonic fields; electromagnetic wave propagation;
+wave polarization; power and Poynting vector; transmission lines; Smith chart; rectangular waveguides;
+waveguide current and mode excitation; dipole antenna; small loop antennas; antenna characteristics;
+antenna arrays. (Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd year
+and 3rd year.) (3 lecture, 2 tutorial hours a week.)
+
+ELEC-4330. Digital Integrated Circuit Design
+Physics and modelling of MOSFETs; fabrication and layout of CMOS integrated circuits; the CMOS
+inverter: analysis and design; switching properties of MOSFETs; static logic gates; transmission gate logic
+circuits; dynamic logic circuit concepts; CMOS dynamic logic families; CMOS differential logic families;
+design methodologies and CAD tools; deep-submicron implementations. (Prerequisites: completion of all
+Electrical Engineering courses from 1st year, 2nd year and 3rd year.) (3 lecture, 2 laboratory/tutorial
+hours or equivalent a week.)
+
+ELEC-4340. Automotive Electronics
+Proportional-Integral-Derivative (PID) controllers and limit cycle controllers; fundamentals of digital
+control of Spark-Ignition (SI) engine; MPC555 Motorola Power PC/dSPACE based SI engine control
+system; Motronic engine management system; automotive sensors and actuators; vehicle motion control
+including Antilock Braking System (ABS); Controller Area Network (CAN); Time-Triggered CAN (TTCAN);
+FlexRay. (Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd
+year.) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4350. Microelectromechanical Systems
+MicroElectroMechanical System (MEMS) technology overview and design process; microfabrication and
+process integration; lumped element modeling; 3-D finite element modeling; energy conserving
+transducers (electrostatics); linear and nonlinear system dynamics; elasticity, stress, strain, material
+properties; structure analysis, beams, plates; MEMS sensing and actuation; material case studies; MEMS
+design methodology; device modeling. (Prerequisites: completion of all Electrical Engineering courses
+from 1st year, 2nd year and 3rd year.) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4360. Computer Communications
+Protocols and architecture; data transmission; data encoding; interfacing; data link control; multiplexing,
+ISO reference model; wide-area networks; circuit switching; packet switching; ATM and frame relay; LAN
+technology and systems; internet protocols; inter-network operation; transport protocols; network
+security. (Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd
+year.) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4370. Intelligent Computing
+Computing models of the human mind. Neural computing models and learning algorithms. Fuzzy set
+theory and fuzzy systems. Evolutionary computing. Applications of intelligent computing. (Prerequisites:
+completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd year in an Engineering
+program or fourth year standing in a Computer Science program.) (3 lecture, 2 laboratory/tutorial hours
+or equivalent a week.)
+
+ELEC-4380. Coding and Information Theory
+Abstract algebra, number theory and complexity theory; simple cryptosystems; Shannon's theory;
+entropy and information theory; data encryption standard, RSA system and factoring; public-key
+cryptosystems; signature schemes; hash functions; key distribution and key agreement; identification
+schemes; authentication codes; access structures and general secret sharing; pseudo-random number
+generation; zero-knowledge proofs (Prerequisites: completion of all Electrical Engineering courses from
+1st year, 2nd year and 3rd year) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4390. Multimedia Systems
+Multimedia signals: Audio fundamentals; the Human visual system and perception; multimedia data
+acquisition. Multimedia signal compression: Transforms and subband decomposition; text
+representation; digital text, audio, image, and video compression. Multimedia signal processing: Digital
+audio, image, and video processing. Multimedia systems. (Prerequisites: completion of all Electrical
+Engineering courses from 1st year, 2nd year and 3rd year) (3 lecture, 2 laboratory/tutorial hours or
+equivalent a week.)
+
+ELEC-4400. Wireless Communications
+Introduction to wireless communications; cellular system design fundamentals; propagation path loss;
+fading and multi-path propagation; modulation techniques; diversity; coding and equalization; speech
+coding for wireless communications; multiple access networking, wireless communications protocols;
+satellite communication systems. (Prerequisites: completion of all Electrical Engineering courses from 1st
+year, 2nd year and 3rd year.) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4430. Embedded System Design
+Embedded hardware and software systems; introduction to embedded systems; custom single-purpose
+processors, hardware design; general-purpose processors, software, design flow environment and tools,
+testing and debugging; standard single-purpose processors, peripherals, memory system design;
+interfacing issues, serial and parallel communication, bus standards, protocols and arbitration; exercises
+on real world applications; Laboratory implementation on modern Field Programmable Gate Arrays
+(FPGAs) and microcontrollers using associated Electronic Design Automation (EDA) tools. (Prerequisites:
+completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd year.) (3 lecture, 3
+laboratory hours a week.)
+
+ELEC-4440. Analog Integrated Circuit Design
+Bipolar and Metal-Oxide-Semiconductor Field-Effect Transistors (MOSFET) technology; device
+characterization; analog circuit modelling; current sinks, sources, and mirrors; differential pairs; current
+and voltage amplifiers; differential amplifiers; comparators; operational amplifiers; A/D and D/A
+converters; Integrated Circuit (IC) implementation with Electronic Design Automation (EDA) tools.
+(Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd year.) (3
+lecture, 3 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4450. Power Electronics
+Power diodes; thyristors; power Metal-Oxide-Semiconductor Field-Effect Transistors (MOSFET);
+Insulated-Gate Bipolar Transistors (IGBT); controlled rectifiers; DC-DC converters; inverters; AC-AC
+converters; gate drive circuits; motor drives; r computer simulation of power electronics and motor
+drives. (Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd
+year.) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+ELEC-4470. Computer Networks Security
+Introduction to computer networks security; cryptography; public-key and secret key encryption;
+encryption algorithms; network security mechanisms and techniques; security protocols; authentication
+and network security services; traditional and emerging Information Technology (IT) security; cyber-
+security. (Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd
+year.) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4480. Digital Computer Architecture
+Computer Organization and architecture (32 bit); computer abstraction; reduced instruction set; high
+level to assembler level language translation; pipelinable instruction set architectures; speculation and
+branch prediction; instruction level parallelism; memory hierarchies, and virtual memory; secondary
+storage and I/O; multithreading, multicore, multiple CPU, and clustering; Graphics Processing Unit (GPU).
+(Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd year and 3rd year.) (3
+lecture, 3 laboratory/tutorial hours a week.)
+
+ELEC-4490. Sensor and Vision Systems
+Basics of sensors and transducers; sensor characteristics and applications; fundamentals of pressure,
+temperature, displacement and position sensors; accelerometer physics, strain gauges, and torque
+sensors; machine vision; image processing, image enhancement, edge and corner detectors; image
+segmentation techniques; image feature extraction and matching; colour models and processing; object
+recognition and classification; discussion on camera parameters and calibration; stereo vision, 3D range
+imaging techniques. (Prerequisites: completion of all Electrical Engineering courses from 1st year, 2nd
+year and 3rd year.) (3 lecture, 2 laboratory/tutorial hours a week.)
+
+ELEC-4500. Power Systems I
+Principles of operation, modeling and analysis of electric power systems; complex power, phasors and
+per-unit system; three-phase circuits; power transformer and generator modeling; transmission line
+parameters; steady-state operation of transmission lines; network matrices and power flow analysis;
+introduction to alternative energy sources. (Prerequisites: completion of all Electrical Engineering courses
+from 1st year, 2nd year and 3rd year) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
+
+ELEC-4570. Fundamentals of Digital Signal Processing
+Discrete time signals and systems models and analysis; Z-transform; discrete Fourier transform (DFT); FFT
+algorithms; FIR filter design; IIR filter design; stability; realization; hardware and software
+implementations; digital signal processing applications. (Prerequisites: completion of all Electrical
+Engineering courses from 1st year, 2nd year and 3rd year.) (3 lecture, 2 laboratory/tutorial hours or
+equivalent a week.)
+
+ELEC-4600. Power Systems II
+Advanced analytical tools; analysis of abnormal operation, numerical methods, stability and control;
+transient stability and voltage stability; control and monitoring of power systems; dynamics and control
+of multi-machine systems; symmetrical faults; symmetrical components; unsymmetrical faults; power
+system protection and relaying; economic dispatch; optimal power flow; numerical simulation tools in
+power systems. (Prerequisites: ELEC-4500 and completion of all Electrical Engineering courses from 1st
+year, 2nd year and 3rd year.) (3 lecture, 2 laboratory/tutorial hours or equivalent a week.)
