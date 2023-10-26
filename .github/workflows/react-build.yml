@@ -1,9 +1,9 @@
 name: "build react project"
 run-name: "building react project"
 on: [push]
-defaults:
-    run:
-     working-directory: ./front
+# defaults:
+#     run:
+#      working-directory: ./front
 jobs:
   Build-React-App:
     runs-on: ubuntu-latest
