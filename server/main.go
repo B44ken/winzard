@@ -1,6 +1,7 @@
 package main
 
 func main() {
-	database_connect()
-	start_server()
+	DatabaseConnect()
+	GetCourseOptions("COMP1410")
+	StartServer()
 }

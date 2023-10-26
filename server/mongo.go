@@ -12,7 +12,7 @@ import (
 
 var db *mongo.Database
 
-func database_connect() *mongo.Database {
+func DatabaseConnect() *mongo.Database {
 	mongo_pass := os.Getenv("MONGO_PASS")
 
 	if mongo_pass == "" {
@@ -21,7 +21,7 @@ func database_connect() *mongo.Database {
 	}
 
 	serverAPI := options.ServerAPI(options.ServerAPIVersion1)
-	opts := options.Client().ApplyURI("mongodb+srv://b44ken:" + mongo_pass + "@winzard.0puyoun.mongodb.net/?retryWrites=true&w=majority").SetServerAPIOptions(serverAPI)
+	opts := options.Client().ApplyURI("mongodb+srv://client:" + mongo_pass + "@winzard.dnvuply.mongodb.net/?retryWrites=true&w=majority").SetServerAPIOptions(serverAPI)
 
 	client, err := mongo.Connect(context.TODO(), opts)
 	if err != nil {
@@ -29,20 +29,25 @@ func database_connect() *mongo.Database {
 	}
 
 	db = client.Database("winzard")
+	fmt.Println("connected to mongodb")
 	return db
 }
 
-func get_course_options(code string) []CourseOption {
+func GetCourseOptions(code string) []CourseOption {
 	var course_options []CourseOption
 
 	collection := db.Collection("course_options_winter2024")
-	search, _ := collection.Find(context.Background(), bson.M{"code": code})
+	search, err := collection.Find(context.Background(), bson.M{"code": code})
+	if err != nil {
+		panic(err)
+	}
+
 	search.All(context.Background(), &course_options)
 
 	return course_options
 }
 
-func get_course_details(code string) CourseDetails {
+func GetCourseDetails(code string) CourseDetails {
 	var course_details CourseDetails
 
 	collection := db.Collection("course_details")
@@ -51,7 +56,7 @@ func get_course_details(code string) CourseDetails {
 	return course_details
 }
 
-func search_course_details(query string) []CourseDetails {
+func SearchCourseDetails(query string) []CourseDetails {
 	collection := db.Collection("course_details")
 
 	pipeline := mongo.Pipeline([]bson.D{bson.D{

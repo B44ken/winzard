@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func handle_options(response http.ResponseWriter, request *http.Request) {
+func HandleOptions(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
 	code := strings.ToUpper(request.URL.Query().Get("code"))
 
@@ -15,7 +15,7 @@ func handle_options(response http.ResponseWriter, request *http.Request) {
 		return
 	}
 
-	results := get_course_options(code)
+	results := GetCourseOptions(code)
 	marshal, err := json.Marshal(results)
 	if err != nil {
 		response.Write([]byte("[{ error: true }]"))
@@ -27,10 +27,9 @@ func handle_options(response http.ResponseWriter, request *http.Request) {
 	}
 
 	response.Write(marshal)
-
 }
 
-func handle_details_search(response http.ResponseWriter, request *http.Request) {
+func HandleDetailsSearch(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
 
 	search := request.URL.Query().Get("search")
@@ -39,7 +38,7 @@ func handle_details_search(response http.ResponseWriter, request *http.Request) 
 		return
 	}
 
-	results := search_course_details(search)
+	results := SearchCourseDetails(search)
 	marshal, err := json.Marshal(results)
 	if err != nil {
 		response.Write([]byte("[{ error: true }]"))
@@ -52,9 +51,9 @@ func handle_details_search(response http.ResponseWriter, request *http.Request) 
 	response.Write(marshal)
 }
 
-func start_server() {
-	http.HandleFunc("/details", handle_details_search)
-	http.HandleFunc("/options", handle_options)
+func StartServer() {
+	http.HandleFunc("/details", HandleDetailsSearch)
+	http.HandleFunc("/options", HandleOptions)
 
 	http.ListenAndServe(":8790", nil)
 }
