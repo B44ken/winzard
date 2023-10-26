@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 3300",
+        "code": "COMP3300",
         "lab_exists": false,
         "times": {
             "lecture": {
@@ -24,7 +24,10 @@
             "lecture": "Imran Ahmad"
         },
         "seats": {
-            "lecture": "Open Seats 160 of 160"
+            "lecture": [
+                160,
+                160
+            ]
         }
     }
 ]

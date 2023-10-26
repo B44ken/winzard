@@ -1,0 +1,18 @@
+name: "build react project"
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Build-React-App:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+        - name: "checkout"
+          uses: actions/checkout@v4
+        - run: npm install
+        - name: "build"
+          run: cd front && npm run build
+        - name: "deploy"
+          uses: JamesIves/github-pages-deploy-action@4.1.1
+          with:
+            branch: gh-pages
+            folder: front/build

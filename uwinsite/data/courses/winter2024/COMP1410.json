@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -35,15 +35,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -75,15 +81,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -115,15 +127,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -155,15 +173,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -195,15 +219,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -235,15 +265,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -275,15 +311,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -315,15 +357,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -355,15 +403,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -395,15 +449,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -435,15 +495,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -474,15 +540,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -513,15 +585,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -552,15 +630,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -591,15 +675,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -630,15 +720,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -669,15 +765,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -708,15 +810,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -747,15 +855,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -786,15 +900,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -825,15 +945,21 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1410",
+        "code": "COMP1410",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -864,8 +990,14 @@
             "lab": "Curtis Bright"
         },
         "seats": {
-            "lecture": "Open Seats 180 of 180",
-            "lab": "Open Seats 38 of 38"
+            "lecture": [
+                180,
+                180
+            ],
+            "lab": [
+                38,
+                38
+            ]
         }
     }
 ]

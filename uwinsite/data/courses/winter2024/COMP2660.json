@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2660",
+        "code": "COMP2660",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -35,15 +35,21 @@
             "lab": "Alioune Ngom"
         },
         "seats": {
-            "lecture": "Open Seats 120 of 120",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                120,
+                120
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2660",
+        "code": "COMP2660",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -75,15 +81,21 @@
             "lab": "Alioune Ngom"
         },
         "seats": {
-            "lecture": "Open Seats 120 of 120",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                120,
+                120
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2660",
+        "code": "COMP2660",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -115,15 +127,21 @@
             "lab": "Alioune Ngom"
         },
         "seats": {
-            "lecture": "Open Seats 120 of 120",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                120,
+                120
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2660",
+        "code": "COMP2660",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -155,8 +173,14 @@
             "lab": "Alioune Ngom"
         },
         "seats": {
-            "lecture": "Open Seats 120 of 120",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                120,
+                120
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     }
 ]

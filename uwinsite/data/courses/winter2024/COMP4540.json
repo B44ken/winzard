@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 4540",
+        "code": "COMP4540",
         "lab_exists": false,
         "times": {
             "lecture": {
@@ -24,7 +24,10 @@
             "lecture": "Peter Tsin"
         },
         "seats": {
-            "lecture": "Open Seats 60 of 60"
+            "lecture": [
+                60,
+                60
+            ]
         }
     }
 ]

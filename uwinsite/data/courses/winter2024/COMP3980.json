@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 3980",
+        "code": "COMP3980",
         "lab_exists": false,
         "times": {
             "lecture": {
@@ -18,7 +18,10 @@
             "lecture": "Xiaobu Yuan"
         },
         "seats": {
-            "lecture": "Open Seats 9999 of 9999"
+            "lecture": [
+                9999,
+                9999
+            ]
         }
     }
 ]

@@ -3,11 +3,73 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main > * {
+  height: 600px;
+  margin: 8px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  display: flex;
+  flex-direction:.column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.column-day {
+  width: 160px;
+  height: 100%;
+  border-left: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.column-day:nth-child(1) {
+  border-left: none;
+}
+
+.column-day-name {
+  align-items: stretch;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+  margin: 0;  
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.column-lines {
+  height: 565px;
+  border-radius: 12px;
+  z-index: -1;
+  background: repeating-linear-gradient(#fff, #fff 28px, #aaa 29px, #aaa 29px);
+}
+
+
+.course {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #000;
+  margin: 0 8px;
+  padding: 0;
+  min-height: 60px;
+  width: calc(160px - (8px*2));
+}
+
+.column-content {
+  position: relative;
 }

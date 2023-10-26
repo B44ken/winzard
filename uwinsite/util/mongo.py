@@ -6,19 +6,14 @@ def get_db():
     client = pymongo.MongoClient(f"mongodb+srv://client:{MONGO_PASS}@winzard.dnvuply.mongodb.net/?retryWrites=true&w=majority")
     return client['winzard']
 
-def read_all_courses():
+def get_all_courses(semester='winter2024'):
     courses = []
-    for path in os.listdir(f'school/'):
-        if path == 'all.json':
-            continue
-        courses += json.load(open(f'school/{path}/calendar.json'))
-
-    for i in courses:
-        i['code'] = i['code'].replace('-', '')
+    for path in os.listdir(f'../data/courses/{semester}/'):
+        courses += json.load(open(f'../data/courses/{semester}/{path}'))
     return courses
 
 if __name__ == '__main__':
     db = get_db()
-    options = db['course_details']
+    options = db['course_options_winter2024']
     options.delete_many({})
-    options.insert_many(read_all_courses())
+    options.insert_many(get_all_courses())

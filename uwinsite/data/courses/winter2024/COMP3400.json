@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 3400",
+        "code": "COMP3400",
         "lab_exists": false,
         "times": {
             "lecture": {
@@ -23,7 +23,10 @@
             "lecture": "To be Announced"
         },
         "seats": {
-            "lecture": "Open Seats 120 of 120"
+            "lecture": [
+                120,
+                120
+            ]
         }
     }
 ]

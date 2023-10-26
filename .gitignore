@@ -2,3 +2,6 @@ uwinsite/__pycache__
 uwinsite/html
 uwinsite/data/log
 uwinsite/data/courses
+
+front/node_modules
+front/build

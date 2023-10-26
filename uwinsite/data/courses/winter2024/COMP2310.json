@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2310",
+        "code": "COMP2310",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -35,15 +35,21 @@
             "lab": "Ahmad Biniaz"
         },
         "seats": {
-            "lecture": "Open Seats 60 of 60",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                60,
+                60
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2310",
+        "code": "COMP2310",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -75,8 +81,14 @@
             "lab": "Ahmad Biniaz"
         },
         "seats": {
-            "lecture": "Open Seats 60 of 60",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                60,
+                60
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     }
 ]

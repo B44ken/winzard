@@ -17,11 +17,12 @@ def scrape_course_options(xml, course_code='NULL0001'):
             except IndexError as err:
                 field_objects[j] += ['Parse Error']
 
-        dates = field_objects[1][i]
+        dates = field_objects[1][i].split(' - ')
         times = field_objects[2][i].split('\n')
         room = field_objects[3][i].split('\n')
         instructor = field_objects[4][i].split('\n')
-        seats = field_objects[5][i].split('\n')
+        seats = re.findall(r'([0-9]+) of ([0-9]+)', field_objects[5][i])
+
         days = []
         hours = []
         if times[0] != 'Not Applicable':
@@ -44,7 +45,7 @@ def scrape_course_options(xml, course_code='NULL0001'):
                 'lecture': instructor[0]
             },
             'seats': {
-                'lecture': seats[0]
+                'lecture': [int(seats[0][0]), int(seats[0][1])] 
             }
         }
         if len(times) == 4:
@@ -54,7 +55,9 @@ def scrape_course_options(xml, course_code='NULL0001'):
             }
             opt['room']['lab'] = room[1]
             opt['instructor']['lab'] = instructor[1]
-            opt['seats']['lab'] = seats[1]
+            opt['seats']['lab'] = [int(seats[0][0]), int(seats[0][1])]
+            if len(seats) == 2:
+                opt['seats']['lab'] = [int(seats[1][0]), int(seats[1][1])]
             opt['lab_exists'] = True
 
         options += [opt]

@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 3520",
+        "code": "COMP3520",
         "lab_exists": false,
         "times": {
             "lecture": {
@@ -24,7 +24,10 @@
             "lecture": "To be Announced"
         },
         "seats": {
-            "lecture": "Open Seats 30 of 30"
+            "lecture": [
+                30,
+                30
+            ]
         }
     }
 ]

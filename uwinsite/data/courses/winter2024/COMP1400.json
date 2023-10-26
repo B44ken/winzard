@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1400",
+        "code": "COMP1400",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -35,15 +35,21 @@
             "lab": "Dima Alhadidi"
         },
         "seats": {
-            "lecture": "Open Seats 150 of 150",
-            "lab": "Open Seats 35 of 35"
+            "lecture": [
+                150,
+                150
+            ],
+            "lab": [
+                35,
+                35
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1400",
+        "code": "COMP1400",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -75,15 +81,21 @@
             "lab": "Dima Alhadidi"
         },
         "seats": {
-            "lecture": "Open Seats 150 of 150",
-            "lab": "Open Seats 35 of 35"
+            "lecture": [
+                150,
+                150
+            ],
+            "lab": [
+                35,
+                35
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1400",
+        "code": "COMP1400",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -115,15 +127,21 @@
             "lab": "Dima Alhadidi"
         },
         "seats": {
-            "lecture": "Open Seats 150 of 150",
-            "lab": "Open Seats 35 of 35"
+            "lecture": [
+                150,
+                150
+            ],
+            "lab": [
+                35,
+                35
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 1400",
+        "code": "COMP1400",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -155,8 +173,14 @@
             "lab": "Dima Alhadidi"
         },
         "seats": {
-            "lecture": "Open Seats 150 of 150",
-            "lab": "Open Seats 35 of 35"
+            "lecture": [
+                150,
+                150
+            ],
+            "lab": [
+                35,
+                35
+            ]
         }
     }
 ]

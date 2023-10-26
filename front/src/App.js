@@ -1,6 +1,13 @@
+import React from 'react';
+import Controls from './Controls';
+import Timetable from './Timetable';
+
 function App() {
   return (
-    <h1>winzard</h1>
+    <div className="main">
+      <Timetable />
+      <Controls />
+    </div>
   );
 }
 

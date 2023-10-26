@@ -9,7 +9,7 @@ def scrape_search_list(xml):
     results = []
 
     for a in anchor:
-        title = a.text.strip()
+        title = a.text.strip().replace(' ', '')
         dbcsprd = re.findall(r'DBCSPRD_([0-9]+)', a['href'])[0]
         course_id = re.findall(r'CRSE_ID=([0-9]+)', a['href'])[0]
         results += [{

@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2800",
+        "code": "COMP2800",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -35,15 +35,21 @@
             "lab": "Muhammad Asaduzzaman"
         },
         "seats": {
-            "lecture": "Open Seats 105 of 105",
-            "lab": "Open Seats 34 of 34"
+            "lecture": [
+                105,
+                105
+            ],
+            "lab": [
+                34,
+                34
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2800",
+        "code": "COMP2800",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -75,15 +81,21 @@
             "lab": "Muhammad Asaduzzaman"
         },
         "seats": {
-            "lecture": "Open Seats 105 of 105",
-            "lab": "Open Seats 34 of 34"
+            "lecture": [
+                105,
+                105
+            ],
+            "lab": [
+                34,
+                34
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2800",
+        "code": "COMP2800",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -115,8 +127,14 @@
             "lab": "Muhammad Asaduzzaman"
         },
         "seats": {
-            "lecture": "Open Seats 105 of 105",
-            "lab": "Open Seats 34 of 34"
+            "lecture": [
+                105,
+                105
+            ],
+            "lab": [
+                34,
+                34
+            ]
         }
     }
 ]

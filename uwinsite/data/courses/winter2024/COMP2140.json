@@ -3,7 +3,7 @@
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2140",
+        "code": "COMP2140",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -35,15 +35,21 @@
             "lab": "Jianguo Lu"
         },
         "seats": {
-            "lecture": "Open Seats 175 of 175",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                175,
+                175
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2140",
+        "code": "COMP2140",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -75,15 +81,21 @@
             "lab": "Jianguo Lu"
         },
         "seats": {
-            "lecture": "Open Seats 175 of 175",
-            "lab": "Open Seats 30 of 30"
+            "lecture": [
+                175,
+                175
+            ],
+            "lab": [
+                30,
+                30
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2140",
+        "code": "COMP2140",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -115,15 +127,21 @@
             "lab": "Jianguo Lu"
         },
         "seats": {
-            "lecture": "Open Seats 175 of 175",
-            "lab": "Open Seats 32 of 32"
+            "lecture": [
+                175,
+                175
+            ],
+            "lab": [
+                32,
+                32
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2140",
+        "code": "COMP2140",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -155,15 +173,21 @@
             "lab": "Jianguo Lu"
         },
         "seats": {
-            "lecture": "Open Seats 175 of 175",
-            "lab": "Open Seats 32 of 32"
+            "lecture": [
+                175,
+                175
+            ],
+            "lab": [
+                32,
+                32
+            ]
         }
     },
     {
         "dates": [
             "08/01/2024 - 08/04/2024"
         ],
-        "code": "COMP 2140",
+        "code": "COMP2140",
         "lab_exists": true,
         "times": {
             "lecture": {
@@ -195,8 +219,14 @@
             "lab": "Jianguo Lu"
         },
         "seats": {
-            "lecture": "Open Seats 175 of 175",
-            "lab": "Open Seats 32 of 32"
+            "lecture": [
+                175,
+                175
+            ],
+            "lab": [
+                32,
+                32
+            ]
         }
     }
 ]
