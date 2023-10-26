@@ -1,9 +1,6 @@
 name: "build react project"
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
-defaults:
-    run:
-     working-directory: front
 jobs:
   Build-React-App:
     runs-on: ubuntu-latest
