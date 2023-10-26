@@ -1,13 +1,14 @@
 name: "build react project"
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: "building react project"
 on: [push]
 defaults:
     run:
-     working-directory: front
+     working-directory: ./front
 jobs:
   Build-React-App:
     runs-on: ubuntu-latest
     steps:
+        - run: ls
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
         - name: "checkout"
           uses: actions/checkout@v4
