@@ -1,45 +1,12 @@
-INCLUDE_GRADUATE_COURSES = False
-# graduate courses aren't supported at the moment
+#include <stdio.h>
 
-SKIP_EXISTING = True
-
-
-import coursexml, searchxml, fetchdata
-import os, sys, json
-
-existing_courses = [i.split('.')[0] for i in os.listdir('data/courses/winter2024')]
-
-session_id = os.environ.get('SESSION_ID')
-if session_id is None:
-    print('supply a session id by exporting `SESSION_ID`')
-    exit()
-
-try:
-    search_term = sys.argv[1]
-except IndexError:
-    print('supply a search term')
-    exit()
-
-print(f'searching for "{search_term}"')
-fetched_search = fetchdata.fetch_course_search(search_term, session_id)
-
-search_results = searchxml.scrape_search_list(fetched_search)
-print(f'{len(search_results)} results found.')
-
-for i in search_results:
-    # graduate courses have first digit > 4
-    is_graduate = int(i['title'][5]) > 4
-    if not INCLUDE_GRADUATE_COURSES and is_graduate:
-        continue
-
-    if SKIP_EXISTING and i['title'].replace(' ', '') in existing_courses:
-        continue
-
-    print(f'using {i["title"]}: ', end='')
-    fetched_course = fetchdata.fetch_course_id(i['course_id'], i['dbcsprd'], session_id)
-    course_options = coursexml.scrape_course_options(fetched_course, i['title'])
-
-    print(f'{len(course_options)} options found')
-
-    dump = json.dumps(course_options, indent=4)
-    open(f'data/courses/winter2024/{i["title"].replace(" ","")}.json', 'w+').write(dump)
+int main() {
+	int a,b,c,x;
+	printf("input a, b, c, x in order:\n");
+	scanf("%d%d%d%d", &a, &b, &c, &x);
+	if(x > 40000) {
+		printf("x too big!\n");
+		return 1;
+	}
+	printf("%d(%d)^2 + %d(%d) + %d = %d\n", a, x, b, x, c, a*x*x + b*x + c);
+}

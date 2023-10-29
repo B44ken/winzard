@@ -1,5 +1,5 @@
 name: "build react project"
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: "build react project"
 on: [push]
 jobs:
   Build-React-App:

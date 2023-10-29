@@ -8,6 +8,7 @@ import (
 
 func HandleOptions(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
+	response.Header().Set("Access-Control-Allow-Origin", "*")
 	code := strings.ToUpper(request.URL.Query().Get("code"))
 
 	if code == "" {

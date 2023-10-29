@@ -3,5 +3,5 @@ uwinsite/html
 uwinsite/data/log
 uwinsite/data/courses
 
-front/node_modules
-front/build
+web/node_modules
+web/build
