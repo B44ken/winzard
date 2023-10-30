@@ -46,7 +46,7 @@ const TimetableTable = ({ schedule }) => {
 
 const Course = ({ text, top, height }) => {
     return <p className="course" style={{ top: top, height: height }}>
-        { text.map(e => <span>{e}<br    /></span>) }
+        { text }
     </p>
 }
 
@@ -73,7 +73,10 @@ const Column = ({ name, schedule, wholeDay }) => {
         const totalHeight = 567
         const top = totalHeight * time[0]
         const height = totalHeight * time[1] - top
-        courses.push(<Course text={[ course.code + ' ' + course.type, course.times.join(' - ')]} top={top} key={Math.random()} />)    
+
+        const text = `${course.code} ${course.type} ${course.times.join(' - ').replace(" ", "\xa0")}`
+
+        courses.push(<Course text={text} top={top} key={Math.random()} />)    
     }
 
 

@@ -2,39 +2,36 @@ import React, { useEffect, useState } from 'react';
 import Controls from './Controls';
 import TimetableTable from './TimetableTable';
 
-import { testCourses, getTestCourses, listAllPermutations, getPermutation, coursesOverlap, findNextValid, findLastValid } from './tableManager'
+import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, filterValid} from './tableManager'
 
 const App = () => {
   const [schedule, setSchedule] = useState([])
   const [courses, setCourses] = useState([])
-  const [permutationID, setPermutationID] = useState(2)
+  const [courseCodes, setCourseCodes] = useState(["COMP1410", "COMP2650", "MATH1730", "MATH1020", "STAT2910"])
+  const [permutationID, setPermutationID] = useState(0)
   const [permutations, setPermutations] = useState([])
   
   useEffect(() => {
     (async () => {
-      const courses = await getTestCourses()
-      const permutations = listAllPermutations([...courses])
+      const courses = await fetchCourses(courseCodes)
+      let permutations = listAllPermutations([...courses])
+      permutations = permutations.filter(p => !coursesOverlap(getPermutation(courses, p)))
       const permutation = getPermutation(courses, permutations[permutationID])
       setCourses(courses)
       setSchedule(permutation)
       setPermutations(permutations)
     })()
-  }, [permutationID])
+  }, [permutationID, courseCodes])
 
-  const next = () => {
-    const id = findValid(courses, permutations, permutationID, 1)
-    setPermutationID(id)    
-  }
-
-  const last = () => {
-    const id = findValid(courses, permutations, permutationID, -1)
-    setPermutationID(id)
-  }
+  const find = (dir) => setPermutationID(findValid(courses, permutations, permutationID, dir))
 
   return <>
-    <div className="main">
-      <TimetableTable schedule = {schedule} />
-      <Controls courses={courses} setCourses={setCourses} permutation={permutationID} next={next} last={last} />
+    <div className="page">
+      <h1>Winzard Timetable Very-Pre-Alpha</h1>
+      <div class="main">
+        <TimetableTable schedule={schedule} />
+        <Controls courseCodes={courseCodes} setCourseCodes={setCourseCodes} permutation={permutationID} setPermutation={setPermutationID} find={find} />
+      </div>
     </div>
     </>
 }

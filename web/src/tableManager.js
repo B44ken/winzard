@@ -1,9 +1,6 @@
 let cache = {}
 let pendingCourses = false
 
-class PermutationBuilder {
-    // todo: roll this into a class
-}
 
 const getCourse = (code) =>
     new Promise((resolve, reject) => {
@@ -21,9 +18,9 @@ const getCourse = (code) =>
 
 let testCourses = ["COMP1410", "COMP2650", "MATH1730", "MATH1020", "STAT2910"]
 
-const getTestCourses = async () => {
+const fetchCourses = async (codes) => {
     let courses = []
-    for (const code of testCourses) {
+    for (const code of codes) {
         await getCourse(code)
         // set time intervals (mutate cache)
         for(const option of cache[code]) {
@@ -65,11 +62,18 @@ const cartesian = (...all) => {
   }  
 
 const listAllPermutations = (options, perm=[]) => {
+    if(options.length === 0 && perm.length == 0) return []
+
     const O = options.pop()
     perm.unshift(O.map((o, i) => i))
     if(options.length === 0)
         return cartesian(...perm)
+
     return listAllPermutations(options, perm)
+}
+
+const filterValid = (options, perm) => {
+    return 
 }
 
 const getPermutation = (options, chosen) => {
@@ -82,9 +86,8 @@ const getPermutation = (options, chosen) => {
 
 const coursesOverlap = (list) => {
     const intervals = []
-    for(const course of list) {
+    for(const course of list)
         intervals.push(...course.TimeInterval)
-    }
     intervals.sort((a, b) => a[0] - b[0])
     for(let i = 0; i < intervals.length - 1; i++) {
         if(intervals[i][1] > intervals[i+1][0])
@@ -93,25 +96,14 @@ const coursesOverlap = (list) => {
     return false
 }
 
-const findNextValid = (courses, permutations, permutationID) => {
-    const permutation = getPermutation(courses, permutations[permutationID])
-    if(coursesOverlap(permutation))
-        return findNextValid(courses, permutations, permutationID + 1)
-    return permutation
-}
-
-const findLastValid = (courses, permutations, permutationID) => {
-    const permutation = getPermutation(courses, permutations[permutationID])
-    if(coursesOverlap(permutation))
-        return findLastValid(courses, permutations, permutationID - 1)
-    return permutation
-}
-
 const findValid = (courses, permutations, permutationID, direction) => {
+    permutationID += direction
     const permutation = getPermutation(courses, permutations[permutationID])
+    if(permutationID < 0 || permutationID >= permutations.length)
+        return permutationID - direction
     if(coursesOverlap(permutation))
-        return findValid(courses, permutations, permutationID + direction, direction)
-    return permutations
+        return findValid(courses, permutations, permutationID, direction)
+    return permutationID 
 }
 
-export { testCourses, getTestCourses, listAllPermutations, getPermutation, coursesOverlap, findValid }
+export { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, filterValid }
