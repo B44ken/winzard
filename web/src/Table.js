@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-const TimetableTable = ({ schedule }) => {
+const Table = ({ schedule }) => {
     const scheduleDays = {}
     for(const course of schedule) {
-        
+        console.log(course)
         const lectureTimes = course.Times.Lecture.Hours
         const lectureDays = course.Times.Lecture.Days
         for(const day of lectureDays) {
@@ -13,7 +13,7 @@ const TimetableTable = ({ schedule }) => {
             scheduleDays[day].push({
                 code: course.Code,
                 type: "lecture",
-                times: lectureTimes
+                times: lectureTimes,
             })
         }
         if(course.Times.Lab == undefined) continue
@@ -26,7 +26,7 @@ const TimetableTable = ({ schedule }) => {
             scheduleDays[day].push({
                 code: course.Code,
                 type: "lab",
-                times: labTimes
+                times: labTimes,
             })
         }
 
@@ -74,9 +74,10 @@ const Column = ({ name, schedule, wholeDay }) => {
         const top = totalHeight * time[0]
         const height = totalHeight * time[1] - top
 
+        console.log(course)
         const text = `${course.code} ${course.type} ${course.times.join(' - ').replace(" ", "\xa0")}`
 
-        courses.push(<Course text={text} top={top} key={Math.random()} />)    
+        courses.push(<Course text={text} top={top} height={height} key={Math.random()} />)    
     }
 
 
@@ -90,4 +91,4 @@ const Column = ({ name, schedule, wholeDay }) => {
     </div>
 }
 
-export default TimetableTable
+export default Table

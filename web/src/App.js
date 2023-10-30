@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Controls from './Controls';
-import TimetableTable from './TimetableTable';
+import Table from './Table';
 
 import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, filterValid} from './tableManager'
 
@@ -28,8 +28,8 @@ const App = () => {
   return <>
     <div className="page">
       <h1>Winzard Timetable Very-Pre-Alpha</h1>
-      <div class="main">
-        <TimetableTable schedule={schedule} />
+      <div className="main">
+        <Table schedule={schedule} />
         <Controls courseCodes={courseCodes} setCourseCodes={setCourseCodes} permutation={permutationID} setPermutation={setPermutationID} find={find} />
       </div>
     </div>
