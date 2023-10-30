@@ -22,12 +22,12 @@ const App = () => {
   }, [permutationID])
 
   const next = () => {
-    const id = findNextValid(courses, permutations, permutationID)
+    const id = findValid(courses, permutations, permutationID, 1)
     setPermutationID(id)    
   }
 
   const last = () => {
-    const id = findLastValid(courses, permutations, permutationID)
+    const id = findValid(courses, permutations, permutationID, -1)
     setPermutationID(id)
   }
 

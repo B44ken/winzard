@@ -19,7 +19,7 @@ const getCourse = (code) =>
         }
     })
 
-let testCourses = ["COMP1410", "COMP2650", "MATH1730", "MATH1020"]
+let testCourses = ["COMP1410", "COMP2650", "MATH1730", "MATH1020", "STAT2910"]
 
 const getTestCourses = async () => {
     let courses = []
@@ -74,7 +74,7 @@ const listAllPermutations = (options, perm=[]) => {
 
 const getPermutation = (options, chosen) => {
     const perm = []
-    for(let i = 0; i < chosen.length; i++) {
+    for(const i in chosen) {
         perm.push(options[i][chosen[i]])
     }
     return perm
@@ -107,4 +107,11 @@ const findLastValid = (courses, permutations, permutationID) => {
     return permutation
 }
 
-export { testCourses, getTestCourses, listAllPermutations, getPermutation, coursesOverlap, findLastValid, findNextValid }
+const findValid = (courses, permutations, permutationID, direction) => {
+    const permutation = getPermutation(courses, permutations[permutationID])
+    if(coursesOverlap(permutation))
+        return findValid(courses, permutations, permutationID + direction, direction)
+    return permutations
+}
+
+export { testCourses, getTestCourses, listAllPermutations, getPermutation, coursesOverlap, findValid }

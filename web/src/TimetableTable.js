@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
 const TimetableTable = ({ schedule }) => {
-    console.log(schedule)
     const scheduleDays = {}
     for(const course of schedule) {
         
