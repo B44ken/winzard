@@ -72,10 +72,6 @@ const listAllPermutations = (options, perm=[]) => {
     return listAllPermutations(options, perm)
 }
 
-const filterValid = (options, perm) => {
-    return 
-}
-
 const getPermutation = (options, chosen) => {
     const perm = []
     for(const i in chosen) {
@@ -106,4 +102,20 @@ const findValid = (courses, permutations, permutationID, direction) => {
     return permutationID 
 }
 
-export { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, filterValid }
+const timeSpentAtSchool = (courses) => {
+    let start = [0, 0, 0, 0, 0]
+    let stop = [24*60, 24*60, 24*60, 24*60, 24*60]
+    for(const course of courses) {
+        for(const interval of course.TimeInterval) {
+            const day = Math.floor(interval[0] / (24 * 60))
+            if(start[day] == 0 || interval[0] < start[day])
+                start[day] = interval[0]
+            if(stop[day] == 0 || interval[1] > stop[day])
+                stop[day] = interval[1]
+        }
+    }
+    return stop.map((e, i) => e - start[i]).reduce((a, b) => a + b, 0)
+}
+
+
+export { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, timeSpentAtSchool }

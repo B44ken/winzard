@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 const Table = ({ schedule }) => {
     const scheduleDays = {}
     for(const course of schedule) {
-        console.log(course)
         const lectureTimes = course.Times.Lecture.Hours
         const lectureDays = course.Times.Lecture.Days
         for(const day of lectureDays) {
@@ -34,7 +33,6 @@ const Table = ({ schedule }) => {
 
     const wholeDay = ["8:00", "22:00"]
 
-    // day filtering logic is a little cleaner in the days themselves
     return <div className="days">
         <Column name="Monday" schedule={scheduleDays.Monday} wholeDay={wholeDay} />
         <Column name="Tuesday" schedule={scheduleDays.Tuesday} wholeDay={wholeDay} />
@@ -74,7 +72,6 @@ const Column = ({ name, schedule, wholeDay }) => {
         const top = totalHeight * time[0]
         const height = totalHeight * time[1] - top
 
-        console.log(course)
         const text = `${course.code} ${course.type} ${course.times.join(' - ').replace(" ", "\xa0")}`
 
         courses.push(<Course text={text} top={top} height={height} key={Math.random()} />)    

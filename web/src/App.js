@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Controls from './Controls';
 import Table from './Table';
 
-import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, filterValid} from './tableManager'
+import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, filterValid, timeSpentAtSchool} from './tableManager'
 
 const App = () => {
   const [schedule, setSchedule] = useState([])
@@ -16,17 +16,23 @@ const App = () => {
       const courses = await fetchCourses(courseCodes)
       let permutations = listAllPermutations([...courses])
       permutations = permutations.filter(p => !coursesOverlap(getPermutation(courses, p)))
+      permutations = permutations.sort((a, b) => timeSpentAtSchool(getPermutation(courses, a)) - timeSpentAtSchool(getPermutation(courses, b)))
       const permutation = getPermutation(courses, permutations[permutationID])
       setCourses(courses)
       setSchedule(permutation)
       setPermutations(permutations)
     })()
-  }, [permutationID, courseCodes])
+  }, [courseCodes])
+
+  useEffect(() => {
+    const permutation = getPermutation(courses, permutations[permutationID])
+    setSchedule(permutation)
+  }, [permutationID])
 
   const find = (dir) => setPermutationID(findValid(courses, permutations, permutationID, dir))
 
   return <>
-    <div className="page">
+    <div className="page">  
       <h1>Winzard Timetable Very-Pre-Alpha</h1>
       <div className="main">
         <Table schedule={schedule} />
