@@ -35,14 +35,14 @@ func HandleDetailsSearch(response http.ResponseWriter, request *http.Request) {
 
 	search := request.URL.Query().Get("search")
 	if search == "" {
-		response.Write([]byte("[]"))
+		response.Write([]byte("[{ error: true, message: \"No search term provided\" }]"))
 		return
 	}
 
 	results := SearchCourseDetails(search)
 	marshal, err := json.Marshal(results)
 	if err != nil {
-		response.Write([]byte("[{ error: true }]"))
+		response.Write([]byte("[{ error: true, message: \"Could not marshal response\" }]"))
 		return
 	}
 	if results == nil {

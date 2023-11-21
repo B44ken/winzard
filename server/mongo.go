@@ -59,24 +59,19 @@ func GetCourseDetails(code string) CourseDetails {
 func SearchCourseDetails(query string) []CourseDetails {
 	collection := db.Collection("course_details")
 
-	pipeline := mongo.Pipeline([]bson.D{bson.D{
-		{"$search", bson.D{
-			{"index", "default"},
-			{"text", bson.D{
-				{"query", query},
-				{"path", bson.D{
-					{"wildcard", "*"},
-				}},
-			}},
-		}},
-	}})
+	searchPipeline := mongo.Pipeline{bson.D{{"$search", bson.D{
+		{"text", bson.D{
+			{"path", bson.D{{"wildcard", "*"}}},
+			{"query", query},
+		}}}}}}
 
-	cursor, err := collection.Aggregate(context.Background(), pipeline)
+	cursor, err := collection.Aggregate(context.Background(), searchPipeline)
 	if err != nil {
 		panic(err)
 	}
 
 	var results []CourseDetails
-	cursor.All(context.Background(), &results)
+	cursor.All(context.TODO(), &results)
+
 	return results
 }

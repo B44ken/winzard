@@ -29,8 +29,9 @@ type CourseOption struct {
 }
 
 type CourseDetails struct {
-	Prerequisites []string
-	Corequisites  []string
+	Prerequisites  []string
+	Corequisites   []string
+	AntiRequisites []string
 
 	LabHours     float64
 	LectureHours float64
