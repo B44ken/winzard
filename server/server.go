@@ -2,7 +2,9 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
+	"os"
 	"strings"
 )
 
@@ -53,8 +55,14 @@ func HandleDetailsSearch(response http.ResponseWriter, request *http.Request) {
 }
 
 func StartServer() {
-	http.HandleFunc("/details", HandleDetailsSearch)
-	http.HandleFunc("/options", HandleOptions)
+	root := os.Getenv("SERVER_ROOT") // conveniently defaults to empty string
+	fmt.Println("server up (root " + root + ", port 8790)")
 
-	http.ListenAndServe(":8790", nil)
+	http.HandleFunc(root+"/details", HandleDetailsSearch)
+	http.HandleFunc(root+"/options", HandleOptions)
+
+	err := http.ListenAndServe(":8790", nil)
+	if err != nil {
+		panic(err)
+	}
 }
