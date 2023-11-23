@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Controls from './Controls';
 import Table from './Table';
 
-import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, filterValid, timeSpentAtSchool} from './tableManager'
+import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, scoreSchedule } from './tableManager'
 
 const App = () => {
   const [schedule, setSchedule] = useState([])
@@ -14,9 +14,12 @@ const App = () => {
   useEffect(() => {
     (async () => {
       const courses = await fetchCourses(courseCodes)
+      // this stuff shouldn't be here
       let permutations = listAllPermutations([...courses])
       permutations = permutations.filter(p => !coursesOverlap(getPermutation(courses, p)))
-      permutations = permutations.sort((a, b) => timeSpentAtSchool(getPermutation(courses, a)) - timeSpentAtSchool(getPermutation(courses, b)))
+      permutations = permutations.sort((a, b) =>
+      scoreSchedule(getPermutation(courses, a)) - scoreSchedule(getPermutation(courses, b))
+      )
       const permutation = getPermutation(courses, permutations[permutationID])
       setCourses(courses)
       setSchedule(permutation)
@@ -26,6 +29,7 @@ const App = () => {
 
   useEffect(() => {
     const permutation = getPermutation(courses, permutations[permutationID])
+    console.log(scoreSchedule(permutation))
     setSchedule(permutation)
   }, [permutationID])
 

@@ -17,7 +17,7 @@ const Table = ({ schedule }) => {
         }
         if(course.Times.Lab == undefined) continue
         const labTimes = course.Times.Lab.Hours
-        const labDays = course.Times.Lab.Days
+        const labDays = course.Times.Lab.Days || []
         for(const day of labDays) {
             if(!scheduleDays[day]) {
                 scheduleDays[day] = []
