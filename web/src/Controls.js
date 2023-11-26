@@ -20,7 +20,17 @@ const CourseSearch = ({ addCourse }) => {
 
 }
 
-const Controls = ({ courseCodes, setCourseCodes, permutation, setPermutation, find }) => {
+const TimeSetter = ({ set, name }) => {
+    return <p>
+        <b>{ name }</b> <br />
+        <input type="time" onChange={e => {
+            const [hour, min] = e.target.value.split(":")
+            set(Number(hour * 60) + Number(min))  
+        }} />
+    </p>
+}
+
+const Controls = ({ courseCodes, setCourseCodes, permutation, setPermutation, setEarliest, setLatest, find }) => {
     const removeCourse = (code) => {
         setPermutation(0)
         setCourseCodes(courseCodes.filter(i => i !== code))
@@ -38,6 +48,10 @@ const Controls = ({ courseCodes, setCourseCodes, permutation, setPermutation, fi
             { courseCodes?.map(i => 
                 <CourseTag name={i} key={i} removeCourse={removeCourse} />
             ) }
+
+            <TimeSetter set={setEarliest} name="Earliest Time" value="8:30:00" />
+            <TimeSetter set={setLatest} name="Latest Time" value="22:00:00"/>
+
             <b>Permutation:</b> <br />
             <div className="permutation-controls">
                 <button onClick={() => find(-1)} >-</button>

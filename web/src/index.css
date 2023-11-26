@@ -115,6 +115,12 @@ body {
   width: calc(100% - 60px);
 }
 
+input[type="time"] {
+  text-align: center;
+  width: 140px;
+  margin: 4px calc(50% - 70px);
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
   .main {
     flex-direction: column;
