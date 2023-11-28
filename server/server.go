@@ -34,6 +34,7 @@ func HandleOptions(response http.ResponseWriter, request *http.Request) {
 
 func HandleDetailsSearch(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
+	response.Header().Set("Access-Control-Allow-Origin", "*")
 
 	search := request.URL.Query().Get("search")
 	if search == "" {
