@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Controls from './Controls';
 import Table from './Table';
+import Finder from './Finder';
 
 import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, findValid, scoreSchedule, withinTime } from './tableManager'
 
@@ -12,6 +13,9 @@ const App = () => {
   const [permutations, setPermutations] = useState([])
   const [earliest, setEarliest] = useState(0)
   const [latest, setLatest] = useState(24*60)
+  const state = {
+    schedule, setSchedule, courses, setCourses, courseCodes, setCourseCodes, permutationID, setPermutationID, permutations, setPermutations, earliest, setEarliest, latest, setLatest
+  }
   
   useEffect(() => {
     (async () => {
@@ -46,6 +50,7 @@ const App = () => {
       <div className="main">
         <Table schedule={schedule} />
         <Controls courseCodes={courseCodes} setCourseCodes={setCourseCodes} permutation={permutationID} setPermutation={setPermutationID} find={find} setEarliest={setEarliest} setLatest={setLatest} />
+        <Finder courseCodes={courseCodes} setCourseCodes={setCourseCodes} />
       </div>
     </div>
     </>
