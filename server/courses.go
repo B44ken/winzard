@@ -38,6 +38,7 @@ type CourseDetails struct {
 
 	Code string
 	Name string
+	Description string
 
 	Notes string
 }
