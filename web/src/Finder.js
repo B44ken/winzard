@@ -11,26 +11,20 @@ const Result = ({ json, addCourse }) => {
 export default ({ courseCodes, setCourseCodes }) => {
     const [results, setResults] = useState([])
 
-    const addCourse = (code) => {
+    const addCourse = (code) => 
         setCourseCodes([...courseCodes, code])
-    }
 
     const search = async (event) => {
         const results = await fetch("https://boratto.ca/winzard/api/details?search=" + event.target.value)
         const json = await results.json()
-        console.log(json)
         setResults(json.slice(0, 5))
     }
 
     return (
-        <div className="controls" style={{width:400}}>
-            <div className="header" style={{height: "15%"}}>
-                <h1>Add a Course</h1>
-                <input type="text" placeholder="Search" onChange={search} />
-            </div>
-            <div className="results" style={{height: "80%"}}>
-                { results.map(r => <Result json={r} addCourse={addCourse} />) }
-            </div>
+        <div className="overflow-hidden">
+            <b>Add a Course</b> <br />
+            <input type="text" className="bg-transparent border-b-2 border-gray-900 mx-auto inline-block w-120" placeholder="Search..." onChange={search} />
+            { results.map(r => <Result json={r} addCourse={addCourse} />) }
         </div>
     )
 }

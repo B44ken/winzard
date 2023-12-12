@@ -1,4 +1,8 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* baody {
   margin: 0;
   font-family: 'Roboto', sans-serif; 
 }
@@ -70,7 +74,6 @@ body {
   border: 1px solid #000;
   margin: 0 8px;
   padding: 0;
-  /* min-height: 40px; */
 }
 
 .column-content {
@@ -133,3 +136,4 @@ input[type="time"] {
     margin: 1px;
   }
 }
+*/

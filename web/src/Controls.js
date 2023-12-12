@@ -1,17 +1,18 @@
 import { useRef } from "react"
 
 const CourseTag = ({ name, removeCourse }) => {
-    return <div className="course-tag">
-        <div className="course-tag-name">{ name }</div>
-        <button className="course-tag-button" onClick={() => removeCourse(name)}>x</button>
-    </div>
+    return <div className="rounded-lg bg-gray-900 font-bold uppercase text-white m-1 text-left relative w-60 center mx-auto text-xs m-1">
+        <div className="p-2 inline-block">{ name }</div>
+        <button className="rounded-lg right-0 text-lg p-0 pr-3 absolute" onClick={() => removeCourse(name)}>
+            ×
+        </button>
+  </div>
 }
 
 const CourseSearch = ({ addCourse }) => {
     const inputRef = useRef("")
-    const add = () => {
+    const add = () =>
         addCourse(inputRef.current.textContent)
-    }
 
     return <div className="course-tag">
         <div contentEditable="true" ref={inputRef} />
@@ -20,45 +21,45 @@ const CourseSearch = ({ addCourse }) => {
 
 }
 
-const TimeSetter = ({ set, name }) => {
-    return <p>
+const TimeSetter = ({ set, name, value }) => {
+    return <div className="p-2">
         <b>{ name }</b> <br />
         <input type="time" onChange={e => {
             const [hour, min] = e.target.value.split(":")
             set(Number(hour * 60) + Number(min))  
-        }} />
-    </p>
+        }} defaultValue={value}/>
+    </div>
 }
 
-const Controls = ({ courseCodes, setCourseCodes, permutation, setPermutation, setEarliest, setLatest, find }) => {
+const Controls = ({ setPermutation, setEarliest, setLatest, find, state }) => {
     const removeCourse = (code) => {
-        setPermutation(0)
-        setCourseCodes(courseCodes.filter(i => i !== code))
+        state.setPermutationID(0)
+        state.setCourseCodes(state.courseCodes.filter(i => i !== code))
     }
     const addCourse = (code) => {
-        setPermutation(0)
-        const newCodes = [...courseCodes, code]
-        setCourseCodes(newCodes)
+        state.setPermutationID(0)
+        const newCodes = [...state.courseCodes, code]
+        state.setCourseCodes(newCodes)
     }
 
-    return <div className="rounded-corners controls">
-        <div>
-            <b>Course Selection:</b>
-            <CourseSearch addCourse={addCourse} />
-            { courseCodes?.map(i => 
+    console.log(state)
+
+    return <div className="rounded-corners controls text-center">
+            <div class="flex flex-row flex-center justify-center">
+                <TimeSetter set={setEarliest} name="Earliest Time" value={state.earliest} />
+                <TimeSetter set={setLatest} name="Latest Time" value={state.latest}/>
+            </div>
+
+            <b>Permutation</b>
+            <div className="flex flex-row flex-center justify-center space-x-4">
+                <button className="bg-gray-900 text-white p-1 rounded-lg w-8" onClick={() => find(-1)} >-</button>
+                <div className="p-1 w-20 text-center">{ state.permutationID + 1 } / { state.permutations.length } </div>
+                <button className="bg-gray-900 text-white p-1 rounded-lg w-8" onClick={() => find(1)} >+</button>
+            </div>
+            <b>Course Selection</b>
+            { state.courseCodes.map(i => 
                 <CourseTag name={i} key={i} removeCourse={removeCourse} />
             ) }
-
-            <TimeSetter set={setEarliest} name="Earliest Time" value="8:30:00" />
-            <TimeSetter set={setLatest} name="Latest Time" value="22:00:00"/>
-
-            <b>Permutation:</b> <br />
-            <div className="permutation-controls">
-                <button onClick={() => find(-1)} >-</button>
-                <div>{ permutation }</div>
-                <button onClick={() => find(1)} >+</button>
-            </div>
-        </div>
     </div>
 }
 

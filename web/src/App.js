@@ -8,13 +8,19 @@ import { fetchCourses, listAllPermutations, getPermutation, coursesOverlap, find
 const App = () => {
   const [schedule, setSchedule] = useState([])
   const [courses, setCourses] = useState([])
-  const [courseCodes, setCourseCodes] = useState(["COMP1410", "MATH1730"])
+  const [courseCodes, setCourseCodes] = useState(["COMP2120", "COMP2650", "COMP1410", "MATH1730", "PSYC1160"])
   const [permutationID, setPermutationID] = useState(0)
   const [permutations, setPermutations] = useState([])
-  const [earliest, setEarliest] = useState(0)
-  const [latest, setLatest] = useState(24*60)
+  const [earliest, setEarliest] = useState("08:30:00")
+  const [latest, setLatest] = useState("22:00:00")
   const state = {
-    schedule, setSchedule, courses, setCourses, courseCodes, setCourseCodes, permutationID, setPermutationID, permutations, setPermutations, earliest, setEarliest, latest, setLatest
+    schedule, setSchedule,
+    courses, setCourses,
+    courseCodes, setCourseCodes,
+    permutationID, setPermutationID,
+    permutations, setPermutations,
+    earliest, setEarliest,
+    latest, setLatest
   }
   
   useEffect(() => {
@@ -45,14 +51,21 @@ const App = () => {
   const find = (dir) => setPermutationID(findValid(courses, permutations, permutationID, dir))
 
   return <>
-    <div className="page">  
-      <h1>Winzard Timetable Very-Pre-Alpha</h1>
-      <div className="main">
-        <Table schedule={schedule} />
-        <Controls courseCodes={courseCodes} setCourseCodes={setCourseCodes} permutation={permutationID} setPermutation={setPermutationID} find={find} setEarliest={setEarliest} setLatest={setLatest} />
-        <Finder courseCodes={courseCodes} setCourseCodes={setCourseCodes} />
-      </div>
+    {/* <div className="flex justify-center items-center absolute h-screen w-screen flex-col">   */}
+    <div className="flex justify-center items-center absolute h-screen w-screen flex-col">
+    <div className="grid lg:grid-cols-10 sm:grid-cols-5 bg-transparent w-5/6 h-2/3 place-items-stretch gap-4">
+        <div className="rounded-lg bg-stone-100 col-span-6">
+          <Table schedule={schedule} />
+        </div>
+        <div className="rounded-lg p-2 bg-stone-100 col-span-2">
+          <Controls courseCodes={courseCodes} setCourseCodes={setCourseCodes} permutation={permutationID} setPermutation={setPermutationID} find={find} setEarliest={setEarliest} setLatest={setLatest} state={state}/>
+        </div>
+        <div className="rounded-lg p-2 bg-stone-100  col-span-2">
+          <Finder courseCodes={courseCodes} setCourseCodes={setCourseCodes} />
+        </div>
     </div>
+    </div>
+    <div className="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r h-screen w-screen"></div>
     </>
 }
 
