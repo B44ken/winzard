@@ -50,22 +50,40 @@ const App = () => {
 
   const find = (dir) => setPermutationID(findValid(courses, permutations, permutationID, dir))
 
-  return <>
-    {/* <div className="flex justify-center items-center absolute h-screen w-screen flex-col">   */}
-    <div className="flex justify-center items-center absolute h-screen w-screen flex-col">
-    <div className="grid lg:grid-cols-10 sm:grid-cols-5 bg-transparent w-5/6 h-2/3 place-items-stretch gap-4">
-        <div className="rounded-lg bg-stone-100 col-span-6">
+  const background = <div className="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r h-screen w-screen fixed"></div>
+
+  // responsive would be nice
+  if(window.innerWidth <= 700) return <>
+    {background}
+    <div className="mx-auto w-full p-4 absolute">
+      <div className="w-full overflow-x-scroll rounded-lg my-4 bg-stone-100">
+        <div className="" style={{width: 850}}>
           <Table schedule={schedule} />
         </div>
-        <div className="rounded-lg p-2 bg-stone-100 col-span-2">
-          <Controls courseCodes={courseCodes} setCourseCodes={setCourseCodes} permutation={permutationID} setPermutation={setPermutationID} find={find} setEarliest={setEarliest} setLatest={setLatest} state={state}/>
-        </div>
-        <div className="rounded-lg p-2 bg-stone-100  col-span-2">
-          <Finder courseCodes={courseCodes} setCourseCodes={setCourseCodes} />
-        </div>
+      </div>
+      <div className="rounded-lg my-4 p-4 bg-stone-100 h-1/2" style={{height: 400}}>
+        <Controls state={state} find={find}/>
+      </div>
+      <div className="rounded-lg my-4 p-4 bg-stone-100" style={{height: 400}}>
+        <Finder courseCodes={courseCodes} setCourseCodes={setCourseCodes} />
+      </div>
     </div>
+  </>
+  else return <>
+    {background}
+    <div className="flex justify-center items-center absolute h-screen w-screen flex-col">
+      <div className="grid grid-cols-10 w-5/6 h-2/3 place-items-stretch gap-4">
+          <div className="rounded-lg bg-stone-100 col-span-6 h-full">
+            <Table schedule={schedule} />
+          </div>
+          <div className="rounded-lg p-2 bg-stone-100 col-span-2">
+            <Controls state={state} find={find}/>
+          </div>
+          <div className="rounded-lg p-2 bg-stone-100 col-span-2">
+            <Finder courseCodes={courseCodes} setCourseCodes={setCourseCodes} />
+          </div>
+      </div>
     </div>
-    <div className="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r h-screen w-screen"></div>
     </>
 }
 

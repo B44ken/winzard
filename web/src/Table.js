@@ -34,7 +34,7 @@ const Table = ({ schedule }) => {
     const wholeDay = ["8:00", "22:00"]
 
     return <>
-     <div className="grid grid-cols-5 gap-4 mb-4">
+     <div className="grid grid-cols-5 gap-4 mb-4" style={{minHeight: 600}}>
       <Column name="Monday" schedule={scheduleDays.Monday} wholeDay={wholeDay} />
       <Column name="Tuesday" schedule={scheduleDays.Tuesday} wholeDay={wholeDay} />
       <Column name="Wednesday" schedule={scheduleDays.Wednesday} wholeDay={wholeDay} />
@@ -74,7 +74,7 @@ const Column = ({ name, schedule }) => {
     let courses = []
     for(const course of schedule) {
         const time = scaleTime(course.times)
-        const totalHeight = 567
+        const totalHeight = 600
         const top = totalHeight * time[0]
         const height = totalHeight * time[1] - top
 

@@ -31,7 +31,7 @@ const TimeSetter = ({ set, name, value }) => {
     </div>
 }
 
-const Controls = ({ setPermutation, setEarliest, setLatest, find, state }) => {
+const Controls = ({ find, state }) => {
     const removeCourse = (code) => {
         state.setPermutationID(0)
         state.setCourseCodes(state.courseCodes.filter(i => i !== code))
@@ -46,8 +46,8 @@ const Controls = ({ setPermutation, setEarliest, setLatest, find, state }) => {
 
     return <div className="rounded-corners controls text-center">
             <div class="flex flex-row flex-center justify-center">
-                <TimeSetter set={setEarliest} name="Earliest Time" value={state.earliest} />
-                <TimeSetter set={setLatest} name="Latest Time" value={state.latest}/>
+                <TimeSetter set={state.setEarliest} name="Earliest Time" value={state.earliest} />
+                <TimeSetter set={state.setLatest} name="Latest Time" value={state.latest}/>
             </div>
 
             <b>Permutation</b>
