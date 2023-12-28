@@ -22,6 +22,13 @@ const App = () => {
     earliest, setEarliest,
     latest, setLatest
   }
+
+  const [width, setWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    const handle = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handle)
+    return () => window.removeEventListener('resize', handle)
+  }, [])
   
   useEffect(() => {
     (async () => {
@@ -53,7 +60,7 @@ const App = () => {
   const background = <div className="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r h-screen w-screen fixed"></div>
 
   // responsive would be nice
-  if(window.innerWidth <= 700) return <>
+  if(width <= 700) return <>
     {background}
     <div className="mx-auto w-full p-4 absolute">
       <div className="w-full overflow-x-scroll rounded-lg my-4 bg-stone-100">
