@@ -1,5 +1,5 @@
 # university of windsor wizard
-winzard is a course timetabler for UWindsor students. data is automatically scraped from the university website. live demo: [https://boratto.ca/winzard]()
+winzard is a course timetabler for UWindsor students. data is automatically scraped from the university website. live demo: [boratto.ca/winzard](https://boratto.ca/winzard)
 
 ## tech stack:
 - go (backend api)
