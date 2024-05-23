@@ -11,21 +11,23 @@ import (
 func HandleOptions(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
 	response.Header().Set("Access-Control-Allow-Origin", "*")
-	code := strings.ToUpper(request.URL.Query().Get("code"))
 
-	if code == "" {
-		response.Write([]byte("[]"))
+	code := strings.ToUpper(request.URL.Query().Get("code"))
+	calendar := strings.ToLower(request.URL.Query().Get("calendar"))
+
+	if code == "" || calendar == "" {
+		response.Write([]byte("[{ \"error\": \"No course code or calendar provided\" }]"))
 		return
 	}
 
-	results := GetCourseOptions(code)
+	results := GetCourseOptions(code, calendar)
 	marshal, err := json.Marshal(results)
 	if err != nil {
-		response.Write([]byte("[{ error: true }]"))
+		response.Write([]byte("[{ \"error\": \"Could not marshal response\" }]"))
 		return
 	}
 	if results == nil {
-		response.Write([]byte("[]"))
+		response.Write([]byte("[{ \"error\": \"No results found\"}]"))
 		return
 	}
 

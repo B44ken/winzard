@@ -13,6 +13,7 @@ const App = () => {
   const [permutations, setPermutations] = useState([])
   const [earliest, setEarliest] = useState("08:30:00")
   const [latest, setLatest] = useState("22:00:00")
+  const [calendar, setCalendar] = useState("spring2024")
   const state = {
     schedule, setSchedule,
     courses, setCourses,
@@ -20,7 +21,8 @@ const App = () => {
     permutationID, setPermutationID,
     permutations, setPermutations,
     earliest, setEarliest,
-    latest, setLatest
+    latest, setLatest,
+    calendar, setCalendar
   }
 
   const [width, setWidth] = useState(window.innerWidth)
@@ -32,7 +34,7 @@ const App = () => {
   
   useEffect(() => {
     (async () => {
-      const courses = await fetchCourses(courseCodes)
+      const courses = await fetchCourses(courseCodes, calendar)
       // this stuff shouldn't be here
       let permutations = listAllPermutations([...courses])
       permutations = permutations.filter(p => {
@@ -47,11 +49,11 @@ const App = () => {
       setSchedule(permutation)
       setPermutations(permutations)
     })()
-  }, [courseCodes, earliest, latest])
+  }, [courseCodes, earliest, latest, calendar])
 
   useEffect(() => {
     const permutation = getPermutation(courses, permutations[permutationID])
-    console.log(scoreSchedule(permutation))
+    console.log(scoreSchedule(permutation), permutation)
     setSchedule(permutation)
   }, [permutationID])
 
@@ -60,7 +62,7 @@ const App = () => {
   const background = <div className="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r h-screen w-screen fixed"></div>
 
   // responsive would be nice
-  if(width <= 700) return <>
+  if(width <= 900) return <>
     {background}
     <div className="mx-auto w-full p-4 absolute">
       <div className="w-full overflow-x-scroll rounded-lg my-4 bg-stone-100">

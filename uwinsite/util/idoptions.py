@@ -1,6 +1,8 @@
 import coursexml, searchxml, fetchdata
 import os, json
 
+CALENDAR='fall2024'
+
 session_id = os.environ.get('SESSION_ID')
 
 if session_id is None:
@@ -26,6 +28,6 @@ try:
             continue
         print(f'{len(course_options)} options found for {course_code} {course_id}')
         print(json.dumps(course_options), 
-            file = open(f'data/courses/winter2024/{course_code}.json', 'w'))
+            file = open(f'data/courses/{CALENDAR}/{course_code}.json', 'w'))
 except KeyboardInterrupt:
     exit()

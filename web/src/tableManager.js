@@ -1,16 +1,19 @@
 let cache = {}
 let pendingCourses = false
 
+const ENDPOINT = "http://localhost:8790"
+// const ENDPOINT = "https://boratto.ca/winzard/api"
 
-const getCourse = (code) =>
+
+const getCourse = (code, calendar) =>
     new Promise((resolve, reject) => {
-        if(cache[code] !== undefined)
-            resolve(cache[code])
+        if(cache[code + "_" + calendar] !== undefined)
+            resolve(cache[code + "_" + calendar])
         else {
-            fetch(`https://boratto.ca/winzard/api/options?code=${code}`)
+            fetch(`${ENDPOINT}/options?code=${code}&calendar=${calendar}`)
                 .then(r => r.json())
                 .then(course => { 
-                    cache[code] = course
+                    cache[code + "_" + calendar] = course
                     resolve(course)
                 })
         }
@@ -18,15 +21,16 @@ const getCourse = (code) =>
 
 let testCourses = ["COMP1410", "COMP2650", "MATH1730", "MATH1020", "STAT2910"]
 
-const fetchCourses = async (codes) => {
+const fetchCourses = async (codes, calendar) => {
     let courses = []
     for (const code of codes) {
-        await getCourse(code)
-        if(cache[code].length == 0) {
+        await getCourse(code, calendar)
+        if(cache[code + "_" + calendar].length == 1 && cache[code + "_" + calendar][0].error) {
             alert(`No options found for ${code}`)
+            return []
         }
         // set time intervals (mutate cache for efficiency)
-        for(const option of cache[code]) {
+        for(const option of cache[code + "_" + calendar]) {
             option.TimeInterval = []
             for(const day of option.Times.Lecture.Days) {
                 const dayMin = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].indexOf(day) * 24 * 60
@@ -49,8 +53,8 @@ const fetchCourses = async (codes) => {
                 option.TimeInterval.push([startMin, endMin])
             }
         }
-        const random = Math.floor(cache[code].length * Math.random())
-        courses.push(cache[code])
+        const random = Math.floor([code + "_" + calendar].length * Math.random())
+        courses.push(cache[code + "_" + calendar])
     }
     courses = courses.sort((a, b) => a.Code > b.Code ? 1 : -1)
     return courses

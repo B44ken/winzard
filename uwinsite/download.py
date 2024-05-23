@@ -4,6 +4,7 @@ INCLUDE_GRADUATE_COURSES = False
 # skip courses that have already been downloaded
 SKIP_EXISTING = True
 
+CALENDAR='fall2024'
 
 import coursexml, searchxml, fetchdata
 import os, sys, json
@@ -24,9 +25,9 @@ def download_course(i):
     print(f'{len(course_options)} options found')
 
     dump = json.dumps(course_options, indent=4)
-    open(f'data/courses/winter2024/{i["title"].replace(" ","")}.json', 'w+').write(dump)
+    open(f'data/courses/{CALENDAR}/{i["title"].replace(" ","")}.json', 'w+').write(dump)
 
-existing_courses = [i.split('.')[0] for i in os.listdir('data/courses/winter2024')]
+existing_courses = [i.split('.')[0] for i in os.listdir('data/courses/' + CALENDAR)]
 
 session_id = os.environ.get('SESSION_ID')
 if session_id is None:

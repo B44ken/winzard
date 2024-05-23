@@ -33,10 +33,10 @@ func DatabaseConnect() *mongo.Database {
 	return db
 }
 
-func GetCourseOptions(code string) []CourseOption {
+func GetCourseOptions(code, calendar string) []CourseOption {
 	var course_options []CourseOption
 
-	collection := db.Collection("course_options_winter2024")
+	collection := db.Collection("course_options_" + calendar)
 	search, err := collection.Find(context.Background(), bson.M{"code": code})
 	if err != nil {
 		panic(err)

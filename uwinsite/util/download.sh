@@ -5,7 +5,8 @@ cd uwinsite
 
 for course in $courses; do
     python3 download.py $course &
-    while [ $(jobs | wc -l) -ge 10 ]; do
+    
+    while [ $(jobs | wc -l) -ge $max_jobs ]; do
         sleep 1
     done
 done
