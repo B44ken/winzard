@@ -8,7 +8,6 @@ session_id = os.environ.get('SESSION_ID')
 if session_id is None:
     print('supply a session id with the parameter `id=$SESSION_ID`')
     exit()
-    raise Exception('no session id supplied')
 
 courses_list = open('data/ids/comp.txt').read().split('\n')
 

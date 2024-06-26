@@ -53,7 +53,6 @@ def scrape_course_options(xml, course_code='NULL0001'):
                 'days': times[2].split(' '),
                 'hours': times[3].split(' to '),
             }
-            print(room)
             opt['room']['lab'] = room[1]
             opt['instructor']['lab'] = instructor[1]
             opt['seats']['lab'] = [int(seats[0][0]), int(seats[0][1])]

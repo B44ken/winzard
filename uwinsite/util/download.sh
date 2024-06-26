@@ -1,7 +1,5 @@
-courses=`cat calendar/calendar.txt | grep -Po '[A-Z]{4}(?=.\d{4})' | sort | uniq`
+courses=`cat ../calendar/calendar.txt | grep -Po '[A-Z]{4}(?=.\d{4})' | sort | uniq`
 max_jobs=5
-
-cd uwinsite
 
 for course in $courses; do
     python3 download.py $course &

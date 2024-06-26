@@ -1,7 +1,8 @@
 uwinsite/__pycache__
 uwinsite/html
-uwinsite/data/log
-uwinsite/data/courses
+uwinsite/data/fall2024.json
+uwinsite/data/winter2024.json
+uwinsite/data/courses/
 
 web/node_modules
 web/build
