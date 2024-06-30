@@ -4,7 +4,7 @@ calendar_text = open('calendar.txt', 'r', errors='ignore').read()
 
 def parse_course(text):
     first_line = text.split('\n')[0]
-    if '.' not in first_line:
+    if '. ' not in first_line:
         return None
     code = first_line.split('. ')[0].strip()
     if re.match('[A-Z]{4}[ \-]?[0-9]{4}', code):
