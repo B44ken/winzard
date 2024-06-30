@@ -2,7 +2,7 @@
 INCLUDE_GRADUATE_COURSES = False
 
 # skip courses that have already been downloaded
-SKIP_EXISTING = True
+SKIP_EXISTING = False
 
 CALENDAR = 'fall2024'
 
@@ -53,3 +53,4 @@ if __name__ == '__main__':
         print('supply a search term')
         exit()
     print(f'searching for "{search_term}"')
+    search_and_download(search_term)
